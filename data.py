@@ -9,6 +9,11 @@ from shapely import (
     MultiPoint,
 )
 
+# Valencia region
+valencia_region_polygon = gpd.read_file("./data/valencia_region.geojson").dissolve()[
+    "geometry"
+][0]
+
 # Load fiware containers
 fiware_containers = []
 with open("./data/WasteContainers_FIWARE.json") as f:
@@ -33,21 +38,23 @@ for container in fiware_containers:
             location["location"] = [container["location"]["value"]["coordinates"]]
             location["point"] = Point(container["location"]["value"]["coordinates"])
 
-            possible_locations.append(location)
+            if valencia_region_polygon.contains(location["point"]):
+                possible_locations.append(location)
 
 # Containers out of FIWARE platform
 for index, row in df_no_fiware_containers.iterrows():
     location = {}
     location["location"] = [[row["geo_point_2d.lon"], row["geo_point_2d.lat"]]]
     location["point"] = Point([row["geo_point_2d.lon"], row["geo_point_2d.lat"]])
-    possible_locations.append(location)
+
+    if valencia_region_polygon.contains(location["point"]):
+        possible_locations.append(location)
 
 # Add id
 for i, location in enumerate(possible_locations):
     location["id"] = i
 
-# Valencia region
-valencia_region_polygon = gpd.read_file("./data/valencia_region.geojson").dissolve()["geometry"][0]
+solution_size = len(possible_locations)
 
 
 def get_solution_coords(solution_vector):
