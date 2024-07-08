@@ -69,11 +69,27 @@ def select_parents(population, population_fitness, parents_number, tournament_si
     return selected_parents
 
 
-def cross_parents(parent1, parent2):
+def cross_parents_one_point(parent1, parent2):
     """Cross two parents to generate two children using a crossover point."""
     cross_point = random.randint(1, len(parent1) - 1)
     child1 = parent1[:cross_point] + parent2[cross_point:]
     child2 = parent2[:cross_point] + parent1[cross_point:]
+    return child1, child2
+
+
+def cross_parents_uniform(parent1, parent2):
+    """Cross two parents to generate two children using uniform crossover"""
+    child1 = []
+    child2 = []
+
+    for gen1, gen2 in zip(parent1, parent2):
+        if random.random() < 0.5:
+            child1.append(gen1)
+            child2.append(gen2)
+        else:
+            child1.append(gen2)
+            child2.append(gen1)
+
     return child1, child2
 
 

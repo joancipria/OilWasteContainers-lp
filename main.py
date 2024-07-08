@@ -16,9 +16,8 @@ logger.add("./logs/run_{time}.log")
 pop_size = 100
 generation_number = 100
 parents_number = 50
-mutation_rates = [0.001, 0.005, 0.01, 0.05, 0.1]
+mutation_rates = [0.01]
 tournament_size = 5
-max_ones = 250
 
 logger.debug(f" -------------")
 logger.debug(f" --- Start ---")
@@ -37,11 +36,10 @@ def genetic_algorithm(
     parents_number,
     mutation_rate,
     tournament_size,
-    max_ones,
 ):
     logger.debug(f"--- GA started ---")
     # Generate initial pop
-    population = generate_random_pop(pop_size, solution_size, max_ones)
+    population = generate_random_pop(pop_size, solution_size)
 
     # Main loop of the genetic algorithm
     for generation in range(generation_number):
@@ -62,7 +60,7 @@ def genetic_algorithm(
         new_population = []
         while len(new_population) < pop_size:
             parent1, parent2 = random.sample(parents, 2)
-            child1, child2 = cross_parents_uniform(parent1, parent2, max_ones)
+            child1, child2 = cross_parents_uniform(parent1, parent2)
             new_population.extend([child1, child2])
 
         # Ensure that the new stock is correctly sized
@@ -70,7 +68,7 @@ def genetic_algorithm(
 
         # Mutate the individuals of the new population
         for individual in new_population:
-            mutate_solution(individual, mutation_rate, max_ones)
+            mutate_solution(individual, mutation_rate)
 
         # Replace the old population with the new population
         population = new_population
