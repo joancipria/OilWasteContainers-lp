@@ -25,7 +25,7 @@ logger.debug(f" -------------")
 
 logger.debug(f"Parameters:")
 logger.debug(
-    f"pop_size: {pop_size}, generation_number: {generation_number}, parents_number: {parents_number}, mutation_rates: {mutation_rates}, tournament_size: {tournament_size}, max_ones: {max_ones}"
+    f"pop_size: {pop_size}, generation_number: {generation_number}, parents_number: {parents_number}, mutation_rates: {mutation_rates}, tournament_size: {tournament_size}, max_ones: "
 )
 
 
@@ -92,7 +92,6 @@ for rate in mutation_rates:
         parents_number,
         rate,
         tournament_size,
-        max_ones,
     )
     results.append((rate, best_fitness))
     logger.debug(f"Mutation rate: {rate} | Best fitness: {best_fitness}")
