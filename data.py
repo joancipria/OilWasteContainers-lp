@@ -1,13 +1,7 @@
 import json
 import pandas as pd
 import geopandas as gpd
-from shapely import (
-    to_geojson,
-    voronoi_polygons,
-    Point,
-    intersection,
-    MultiPoint,
-)
+from shapely import Point
 
 # Valencia region
 valencia_region_polygon = gpd.read_file("./data/valencia_region.geojson").dissolve()[
@@ -54,7 +48,7 @@ for index, row in df_no_fiware_containers.iterrows():
 for i, location in enumerate(possible_locations):
     location["id"] = i
 
-solution_size = len(possible_locations)
+individual_size = len(possible_locations)
 
 
 def get_solution_coords(solution_vector):

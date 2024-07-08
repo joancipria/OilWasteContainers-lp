@@ -1,112 +1,66 @@
 import random
-from genetic_algorithm import (
-    generate_random_pop,
-    fitness,
-    select_parents,
-    cross_parents_uniform,
-    mutate_solution,
-)
-from data import solution_size
+import numpy
+
+from deap import base
+from deap import creator
+from deap import tools
+from deap import algorithms
+
+from data import individual_size
+from ga_functions import eval_fitness, feasible
+
 from loguru import logger
 
-logger.add("./logs/run_{time}.log")
+logger.add("./logs/deap_run_{time}.log")
+
+# Parameters
+not_feasible_penalty = 99999999
+cxpb = 0.8  # The probability of mating two individuals.
+mutpb = 0.2  # The probability of mutating an individual.
+ngen = 40  # Number of generations
+pop_size = 300
+
+# Types
+creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
+creator.create("Individual", list, fitness=creator.FitnessMin)
+
+# Initialization
+toolbox = base.Toolbox()
+
+toolbox.register("attr_bool", random.randint, 0, 1)
+toolbox.register(
+    "individual", tools.initRepeat, creator.Individual, toolbox.attr_bool, individual_size
+)
+toolbox.register("population", tools.initRepeat, list, toolbox.individual)
+
+# Operators
+toolbox.register("evaluate", eval_fitness)
+toolbox.decorate("evaluate", tools.DeltaPenality(feasible, not_feasible_penalty))
+toolbox.register("mate", tools.cxUniform, indpb=0.5)
+toolbox.register("mutate", tools.mutFlipBit, indpb=0.05)
+toolbox.register("select", tools.selTournament, tournsize=3)
 
 
-# Params
-pop_sizes = [100]#600, 700, 800]  # NUm genes x1.5, x2
-generation_number = 200
-parents_number = 50
-mutation_rates = [0.001, 0.005, 0.01, 0.05, 0.1]
-tournament_size = 5
-max_ones = 350
+def main(pop_size, cxpb, mutpb, ngen):
+    pop = toolbox.population(n=pop_size)
+    hof = tools.HallOfFame(1)
+    stats = tools.Statistics(lambda ind: ind.fitness.values)
+    stats.register("avg", numpy.mean)
+    stats.register("std", numpy.std)
+    stats.register("min", numpy.min)
+    stats.register("max", numpy.max)
 
-
-def genetic_algorithm(
-    solution_size,
-    pop_size,
-    generation_number,
-    parents_number,
-    mutation_rate,
-    tournament_size,
-    max_ones,
-):
-    logger.debug(f" -------------")
-    logger.debug(f" --- Start ---")
-    logger.debug(f" -------------")
-
-    logger.debug(f"Parameters:")
-    logger.debug(
-        f"pop_size: {pop_size}, generation_number: {generation_number}, parents_number: {parents_number}, mutation_rates: {mutation_rate}, tournament_size: {tournament_size}, max_ones: {max_ones}"
+    pop, log = algorithms.eaSimple(
+        pop,
+        toolbox,
+        cxpb,
+        mutpb,
+        ngen,
+        stats=stats,
+        halloffame=hof,
+        verbose=True,
     )
 
-    # Generate initial pop
-    population = generate_random_pop(pop_size, solution_size, max_ones)
 
-    # Main loop of the genetic algorithm
-    for generation in range(generation_number):
-
-        # Get fitness of current pop
-        fitness_poblacion = [fitness(solution) for solution in population]
-
-        # Print the best fitness of current generation
-        the_best = min(fitness_poblacion)
-        logger.debug(f"Generation {generation + 1} | Best fitness: {the_best}")
-
-        # Select parents
-        parents = select_parents(
-            population, fitness_poblacion, parents_number, tournament_size
-        )
-
-        # Generate new population through crossovers
-        new_population = []
-        while len(new_population) < pop_size:
-            parent1, parent2 = random.sample(parents, 2)
-            child1, child2 = cross_parents_uniform(parent1, parent2, max_ones)
-            new_population.extend([child1, child2])
-
-        # Ensure that the new stock is correctly sized
-        new_population = new_population[:pop_size]
-
-        # Mutate the individuals of the new population
-        for individual in new_population:
-            mutate_solution(individual, mutation_rate, max_ones)
-
-        # Replace the old population with the new population
-        population = new_population
-
-    # Assessing the fitness of the final stock
-    fitness_poblacion = [fitness(individuo) for individuo in population]
-
-    # Find and display the best individual from the final population.
-    best_solution = population[fitness_poblacion.index(min(fitness_poblacion))]
-    logger.debug(f"Best solution: {best_solution} | Fitness: {min(fitness_poblacion)}")
-
-    logger.debug(f" -------------")
-    logger.debug(f" ---- End ----")
-    logger.debug(f" -------------")
-    return min(fitness_poblacion), best_solution
-
-
-# Test different mutation_rates
-results = []
-for pop_size in pop_sizes:
-    for rate in mutation_rates:
-        best_fitness, best_solution = genetic_algorithm(
-            solution_size,
-            pop_size,
-            generation_number,
-            parents_number,
-            rate,
-            tournament_size,
-            max_ones,
-        )
-    results.append((pop_size, rate, best_fitness))
-    # logger.debug(f"Mutation rate: {rate} | Best fitness: {best_fitness}")
-
-
-# Show results
-logger.debug(" --- Experiment results ---")
-for pop_size, rate, fitness in results:
-    logger.debug(
-        f"Population size: {pop_size} | Mutation rate: {rate} | Best fitness: {fitness}"
-    )
+if __name__ == "__main__":
+    main(pop_size, cxpb, mutpb, ngen)
