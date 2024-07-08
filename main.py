@@ -13,21 +13,12 @@ logger.add("./logs/run_{time}.log")
 
 
 # Params
-pop_size = 100
-generation_number = 100
+pop_sizes = [100]#600, 700, 800]  # NUm genes x1.5, x2
+generation_number = 200
 parents_number = 50
 mutation_rates = [0.001, 0.005, 0.01, 0.05, 0.1]
 tournament_size = 5
-max_ones = 250
-
-logger.debug(f" -------------")
-logger.debug(f" --- Start ---")
-logger.debug(f" -------------")
-
-logger.debug(f"Parameters:")
-logger.debug(
-    f"pop_size: {pop_size}, generation_number: {generation_number}, parents_number: {parents_number}, mutation_rates: {mutation_rates}, tournament_size: {tournament_size}, max_ones: {max_ones}"
-)
+max_ones = 350
 
 
 def genetic_algorithm(
@@ -39,7 +30,15 @@ def genetic_algorithm(
     tournament_size,
     max_ones,
 ):
-    logger.debug(f"--- GA started ---")
+    logger.debug(f" -------------")
+    logger.debug(f" --- Start ---")
+    logger.debug(f" -------------")
+
+    logger.debug(f"Parameters:")
+    logger.debug(
+        f"pop_size: {pop_size}, generation_number: {generation_number}, parents_number: {parents_number}, mutation_rates: {mutation_rate}, tournament_size: {tournament_size}, max_ones: {max_ones}"
+    )
+
     # Generate initial pop
     population = generate_random_pop(pop_size, solution_size, max_ones)
 
@@ -81,25 +80,33 @@ def genetic_algorithm(
     # Find and display the best individual from the final population.
     best_solution = population[fitness_poblacion.index(min(fitness_poblacion))]
     logger.debug(f"Best solution: {best_solution} | Fitness: {min(fitness_poblacion)}")
+
+    logger.debug(f" -------------")
+    logger.debug(f" ---- End ----")
+    logger.debug(f" -------------")
     return min(fitness_poblacion), best_solution
 
 
 # Test different mutation_rates
 results = []
-for rate in mutation_rates:
-    best_fitness, best_solution = genetic_algorithm(
-        solution_size,
-        pop_size,
-        generation_number,
-        parents_number,
-        rate,
-        tournament_size,
-        max_ones,
-    )
-    results.append((rate, best_fitness))
-    logger.debug(f"Mutation rate: {rate} | Best fitness: {best_fitness}")
+for pop_size in pop_sizes:
+    for rate in mutation_rates:
+        best_fitness, best_solution = genetic_algorithm(
+            solution_size,
+            pop_size,
+            generation_number,
+            parents_number,
+            rate,
+            tournament_size,
+            max_ones,
+        )
+    results.append((pop_size, rate, best_fitness))
+    # logger.debug(f"Mutation rate: {rate} | Best fitness: {best_fitness}")
+
 
 # Show results
 logger.debug(" --- Experiment results ---")
-for rate, fitness in results:
-    logger.debug(f"Mutation rate: {rate} | Best fitness: {fitness}")
+for pop_size, rate, fitness in results:
+    logger.debug(
+        f"Population size: {pop_size} | Mutation rate: {rate} | Best fitness: {fitness}"
+    )
