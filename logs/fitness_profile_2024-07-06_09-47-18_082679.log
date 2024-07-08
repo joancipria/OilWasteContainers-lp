@@ -1,0 +1,889 @@
+2024-07-06 09:47:18.085 | DEBUG    | __main__:<module>:22 - Start
+2024-07-06 09:47:18.093 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:18.093 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:18.094 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:18.100 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:18.100 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:18.109 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:18.110 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:18.249 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:18.250 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:18.250 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:18.250 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:18.254 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:18.254 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:18.262 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:18.262 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:18.394 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:18.394 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:18.394 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:18.395 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:18.398 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:18.398 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:18.406 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:18.406 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:18.538 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:18.538 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:18.538 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:18.538 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:18.542 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:18.542 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:18.550 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:18.550 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:18.683 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:18.683 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:18.683 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:18.683 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:18.687 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:18.687 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:18.695 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:18.695 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:18.822 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:18.822 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:18.823 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:18.823 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:18.826 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:18.827 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:18.834 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:18.835 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:18.961 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:18.962 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:18.962 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:18.962 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:18.966 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:18.966 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:18.974 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:18.974 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:19.103 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:19.103 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:19.103 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:19.104 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:19.107 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:19.107 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:19.115 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:19.116 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:19.247 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:19.247 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:19.247 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:19.247 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:19.251 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:19.251 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:19.259 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:19.259 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:19.388 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:19.388 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:19.388 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:19.388 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:19.392 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:19.392 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:19.400 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:19.400 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:19.531 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:19.531 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:19.531 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:19.531 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:19.535 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:19.535 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:19.543 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:19.543 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:19.674 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:19.675 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:19.675 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:19.675 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:19.679 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:19.679 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:19.687 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:19.687 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:19.814 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:19.814 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:19.815 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:19.815 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:19.818 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:19.818 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:19.826 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:19.827 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:19.983 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:19.984 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:19.984 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:19.984 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:19.987 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:19.988 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:19.996 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:19.996 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:20.124 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:20.125 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:20.125 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:20.125 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:20.128 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:20.128 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:20.136 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:20.136 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:20.264 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:20.264 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:20.264 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:20.264 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:20.268 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:20.268 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:20.276 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:20.276 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:20.403 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:20.404 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:20.404 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:20.404 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:20.407 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:20.408 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:20.416 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:20.416 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:20.543 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:20.543 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:20.543 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:20.544 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:20.547 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:20.547 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:20.557 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:20.557 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:20.691 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:20.692 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:20.692 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:20.692 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:20.695 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:20.695 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:20.705 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:20.705 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:20.832 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:20.832 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:20.833 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:20.833 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:20.836 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:20.836 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:20.844 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:20.844 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:20.971 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:20.971 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:20.971 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:20.971 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:20.975 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:20.975 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:20.985 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:20.985 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:21.116 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:21.116 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:21.117 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:21.117 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:21.120 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:21.120 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:21.130 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:21.130 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:21.260 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:21.260 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:21.260 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:21.260 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:21.264 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:21.264 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:21.274 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:21.274 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:21.402 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:21.403 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:21.403 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:21.403 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:21.406 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:21.407 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:21.415 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:21.416 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:21.544 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:21.545 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:21.545 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:21.545 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:21.548 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:21.549 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:21.559 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:21.559 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:21.686 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:21.687 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:21.687 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:21.687 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:21.691 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:21.691 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:21.702 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:21.702 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:21.832 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:21.832 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:21.832 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:21.832 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:21.836 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:21.836 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:21.846 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:21.846 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:21.976 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:21.976 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:21.976 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:21.977 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:21.980 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:21.980 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:21.988 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:21.988 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:22.117 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:22.117 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:22.118 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:22.118 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:22.121 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:22.121 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:22.129 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:22.129 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:22.257 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:22.257 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:22.257 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:22.258 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:22.261 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:22.261 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:22.269 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:22.270 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:22.397 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:22.398 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:22.398 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:22.398 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:22.401 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:22.402 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:22.410 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:22.410 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:22.537 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:22.538 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:22.543 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:22.543 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:22.547 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:22.547 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:22.555 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:22.555 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:22.682 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:22.683 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:22.683 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:22.683 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:22.687 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:22.687 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:22.695 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:22.695 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:22.830 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:22.830 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:22.831 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:22.831 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:22.834 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:22.835 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:22.843 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:22.843 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:22.969 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:22.969 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:22.969 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:22.970 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:22.973 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:22.973 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:22.982 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:22.982 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:23.113 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:23.113 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:23.114 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:23.114 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:23.117 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:23.117 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:23.125 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:23.125 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:23.252 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:23.252 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:23.252 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:23.252 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:23.256 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:23.256 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:23.263 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:23.264 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:23.392 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:23.392 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:23.392 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:23.392 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:23.396 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:23.396 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:23.403 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:23.404 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:23.532 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:23.532 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:23.532 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:23.532 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:23.535 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:23.536 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:23.544 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:23.544 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:23.672 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:23.672 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:23.672 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:23.672 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:23.676 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:23.676 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:23.683 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:23.684 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:23.811 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:23.812 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:23.812 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:23.812 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:23.815 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:23.815 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:23.823 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:23.823 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:23.948 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:23.948 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:23.949 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:23.949 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:23.952 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:23.952 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:23.960 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:23.960 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:24.092 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:24.092 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:24.092 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:24.092 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:24.096 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:24.096 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:24.104 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:24.104 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:24.232 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:24.233 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:24.233 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:24.233 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:24.236 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:24.236 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:24.245 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:24.245 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:24.373 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:24.374 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:24.374 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:24.374 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:24.377 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:24.377 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:24.385 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:24.385 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:24.510 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:24.510 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:24.511 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:24.511 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:24.514 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:24.514 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:24.522 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:24.522 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:24.650 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:24.651 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:24.651 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:24.651 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:24.655 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:24.655 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:24.663 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:24.663 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:24.791 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:24.791 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:24.791 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:24.791 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:24.795 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:24.795 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:24.803 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:24.803 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:24.928 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:24.929 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:24.929 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:24.929 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:24.932 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:24.933 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:24.941 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:24.941 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:25.088 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:25.089 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:25.089 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:25.089 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:25.092 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:25.092 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:25.100 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:25.101 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:25.229 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:25.229 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:25.230 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:25.230 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:25.233 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:25.233 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:25.242 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:25.242 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:25.370 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:25.371 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:25.371 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:25.371 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:25.375 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:25.375 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:25.383 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:25.383 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:25.514 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:25.514 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:25.515 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:25.515 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:25.518 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:25.518 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:25.528 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:25.528 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:25.661 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:25.662 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:25.662 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:25.662 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:25.665 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:25.666 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:25.675 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:25.676 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:25.802 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:25.803 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:25.803 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:25.803 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:25.807 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:25.807 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:25.815 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:25.815 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:25.946 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:25.946 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:25.946 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:25.947 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:25.950 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:25.950 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:25.958 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:25.958 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:26.097 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:26.097 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:26.098 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:26.098 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:26.101 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:26.102 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:26.109 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:26.110 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:26.236 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:26.237 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:26.237 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:26.237 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:26.241 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:26.241 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:26.248 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:26.249 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:26.376 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:26.377 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:26.377 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:26.377 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:26.380 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:26.381 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:26.388 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:26.389 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:26.516 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:26.516 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:26.516 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:26.517 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:26.520 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:26.520 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:26.528 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:26.528 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:26.658 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:26.659 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:26.659 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:26.659 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:26.663 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:26.663 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:26.671 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:26.672 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:26.796 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:26.796 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:26.796 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:26.796 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:26.800 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:26.801 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:26.808 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:26.808 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:26.932 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:26.933 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:26.933 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:26.933 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:26.937 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:26.937 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:26.944 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:26.944 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:27.070 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:27.070 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:27.070 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:27.070 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:27.074 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:27.074 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:27.082 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:27.082 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:27.206 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:27.206 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:27.206 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:27.207 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:27.210 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:27.210 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:27.218 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:27.218 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:27.344 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:27.345 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:27.345 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:27.345 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:27.349 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:27.349 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:27.357 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:27.357 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:27.484 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:27.484 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:27.484 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:27.485 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:27.488 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:27.488 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:27.496 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:27.496 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:27.625 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:27.625 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:27.625 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:27.625 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:27.629 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:27.629 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:27.636 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:27.636 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:27.762 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:27.763 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:27.763 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:27.763 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:27.767 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:27.767 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:27.775 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:27.775 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:27.900 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:27.901 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:27.901 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:27.901 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:27.904 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:27.905 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:27.912 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:27.912 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:28.039 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:28.039 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:28.039 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:28.039 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:28.043 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:28.043 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:28.051 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:28.051 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:28.190 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:28.191 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:28.191 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:28.191 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:28.194 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:28.195 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:28.202 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:28.202 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:28.327 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:28.327 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:28.327 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:28.327 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:28.331 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:28.331 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:28.338 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:28.339 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:28.464 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:28.464 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:28.464 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:28.464 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:28.468 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:28.468 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:28.476 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:28.476 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:28.602 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:28.602 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:28.602 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:28.602 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:28.606 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:28.606 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:28.613 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:28.614 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:28.739 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:28.740 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:28.740 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:28.740 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:28.744 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:28.744 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:28.752 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:28.752 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:28.877 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:28.878 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:28.878 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:28.878 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:28.881 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:28.882 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:28.890 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:28.890 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:29.014 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:29.015 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:29.015 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:29.015 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:29.018 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:29.019 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:29.026 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:29.027 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:29.153 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:29.154 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:29.154 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:29.154 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:29.157 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:29.158 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:29.166 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:29.166 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:29.292 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:29.292 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:29.293 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:29.293 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:29.296 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:29.296 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:29.305 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:29.305 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:29.431 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:29.431 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:29.432 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:29.432 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:29.435 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:29.435 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:29.444 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:29.444 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:29.573 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:29.573 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:29.574 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:29.574 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:29.577 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:29.577 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:29.585 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:29.586 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:29.713 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:29.713 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:29.713 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:29.713 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:29.717 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:29.717 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:29.725 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:29.725 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:29.851 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:29.851 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:29.852 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:29.852 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:29.855 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:29.856 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:29.863 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:29.864 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:29.991 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:29.991 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:29.992 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:29.992 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:29.995 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:29.996 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:30.004 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:30.004 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:30.130 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:30.130 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:30.130 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:30.130 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:30.134 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:30.134 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:30.143 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:30.143 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:30.271 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:30.272 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:30.272 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:30.272 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:30.276 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:30.276 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:30.286 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:30.286 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:30.412 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:30.413 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:30.413 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:30.413 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:30.417 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:30.417 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:30.427 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:30.427 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:30.553 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:30.553 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:30.553 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:30.554 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:30.557 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:30.557 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:30.569 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:30.569 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:30.716 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:30.717 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:30.717 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:30.717 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:30.720 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:30.720 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:30.729 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:30.729 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:30.854 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:30.854 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:30.855 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:30.855 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:30.858 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:30.859 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:30.866 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:30.867 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:30.990 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:30.991 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:30.991 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:30.991 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:30.995 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:30.995 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:31.003 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:31.003 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:31.128 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:31.129 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:31.129 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:31.129 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:31.133 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:31.133 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:31.141 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:31.141 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:31.266 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:31.266 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:31.267 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:31.267 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:31.270 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:31.270 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:31.278 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:31.279 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:31.403 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:31.403 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:31.403 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:31.403 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:31.407 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:31.407 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:31.415 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:31.416 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:31.541 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:31.542 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:31.542 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:31.542 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:31.546 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:31.546 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:31.554 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:31.554 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:31.678 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:31.678 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:31.679 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:31.679 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:31.682 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:31.683 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:31.690 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:31.691 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:31.813 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:31.814 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:31.814 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:31.814 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:31.817 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:31.818 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:31.825 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:31.826 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:31.949 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:31.950 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:31.950 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:31.950 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:31.953 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:31.954 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:31.962 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:31.962 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:32.086 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:32.087 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:32.087 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:32.087 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:32.091 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:32.091 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:32.098 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:32.099 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:32.233 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:32.234 | DEBUG    | __main__:genetic_algorithm:44 - Generation 1 | Best fitness: 336665
+2024-07-06 09:47:32.242 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:32.242 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:32.242 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:32.246 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:32.246 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:32.254 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:32.255 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:32.378 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:32.378 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:32.378 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:32.378 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:32.382 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:32.382 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:32.390 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:32.390 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:32.514 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:32.514 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:32.514 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:32.515 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:32.518 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:32.518 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:32.526 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:32.527 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:32.650 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:32.651 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:32.651 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:32.651 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:32.655 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:32.655 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:32.663 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:32.663 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:32.796 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:32.797 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:32.797 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:32.797 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:32.801 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:32.801 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:32.808 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:32.808 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:32.935 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:32.935 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:32.935 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:32.935 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:32.939 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:32.939 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:32.947 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:32.947 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:33.070 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:33.070 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:33.070 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:33.070 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:33.074 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:33.074 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:33.082 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:33.082 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:33.207 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:33.207 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:33.208 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:33.208 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:33.211 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:33.211 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:33.219 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:33.219 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:33.339 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:33.339 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:33.339 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:33.339 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:33.343 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:33.343 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:33.351 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:33.351 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:33.476 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:33.476 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:33.476 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:33.477 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:33.480 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:33.480 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:33.489 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:33.489 | DEBUG    | genetic_algorithm:fitness:58 - Start pop
+2024-07-06 09:47:33.614 | DEBUG    | genetic_algorithm:fitness:75 - End pop
+2024-07-06 09:47:33.614 | DEBUG    | genetic_algorithm:fitness:37 - Start get goords
+2024-07-06 09:47:33.615 | DEBUG    | genetic_algorithm:fitness:40 - End get goords
+2024-07-06 09:47:33.615 | DEBUG    | genetic_algorithm:fitness:43 - Start generate voronoi
+2024-07-06 09:47:33.618 | DEBUG    | genetic_algorithm:fitness:48 - End generate voronoi
+2024-07-06 09:47:33.618 | DEBUG    | genetic_algorithm:fitness:51 - Start intersetc
+2024-07-06 09:47:33.626 | DEBUG    | genetic_algorithm:fitness:56 - End intersetc
+2024-07-06 09:47:33.626 | DEBUG    | genetic_algorithm:fitness:58 - Start pop

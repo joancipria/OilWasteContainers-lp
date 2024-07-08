@@ -1,0 +1,314 @@
+2024-07-08 11:21:22.120 | DEBUG    | __main__:<module>:40 - Solution size: 354
+2024-07-08 11:21:53.206 | DEBUG    | __main__:main:67 - -- Generation 1 --
+2024-07-08 11:22:13.434 | DEBUG    | __main__:main:99 -   Evaluated 171 individuals
+2024-07-08 11:22:13.434 | DEBUG    | __main__:main:112 -   Min 379692.0
+2024-07-08 11:22:13.435 | DEBUG    | __main__:main:113 -   Max 423707.0
+2024-07-08 11:22:13.435 | DEBUG    | __main__:main:114 -   Avg 401539.4166666667
+2024-07-08 11:22:13.435 | DEBUG    | __main__:main:115 -   Std 6924.013182856165
+2024-07-08 11:22:13.435 | DEBUG    | __main__:main:67 - -- Generation 2 --
+2024-07-08 11:22:31.980 | DEBUG    | __main__:main:99 -   Evaluated 165 individuals
+2024-07-08 11:22:31.980 | DEBUG    | __main__:main:112 -   Min 378687.0
+2024-07-08 11:22:31.981 | DEBUG    | __main__:main:113 -   Max 414708.0
+2024-07-08 11:22:31.981 | DEBUG    | __main__:main:114 -   Avg 395539.85
+2024-07-08 11:22:31.981 | DEBUG    | __main__:main:115 -   Std 6446.218956424571
+2024-07-08 11:22:31.981 | DEBUG    | __main__:main:67 - -- Generation 3 --
+2024-07-08 11:22:51.793 | DEBUG    | __main__:main:99 -   Evaluated 171 individuals
+2024-07-08 11:22:51.794 | DEBUG    | __main__:main:112 -   Min 370688.0
+2024-07-08 11:22:51.794 | DEBUG    | __main__:main:113 -   Max 406711.0
+2024-07-08 11:22:51.794 | DEBUG    | __main__:main:114 -   Avg 389894.62
+2024-07-08 11:22:51.794 | DEBUG    | __main__:main:115 -   Std 5654.171805749224
+2024-07-08 11:22:51.794 | DEBUG    | __main__:main:67 - -- Generation 4 --
+2024-07-08 11:23:15.654 | DEBUG    | __main__:main:99 -   Evaluated 189 individuals
+2024-07-08 11:23:15.655 | DEBUG    | __main__:main:112 -   Min 366687.0
+2024-07-08 11:23:15.655 | DEBUG    | __main__:main:113 -   Max 410705.0
+2024-07-08 11:23:15.655 | DEBUG    | __main__:main:114 -   Avg 385696.3933333333
+2024-07-08 11:23:15.655 | DEBUG    | __main__:main:115 -   Std 5747.506164005885
+2024-07-08 11:23:15.655 | DEBUG    | __main__:main:67 - -- Generation 5 --
+2024-07-08 11:23:38.080 | DEBUG    | __main__:main:99 -   Evaluated 183 individuals
+2024-07-08 11:23:38.081 | DEBUG    | __main__:main:112 -   Min 367686.0
+2024-07-08 11:23:38.081 | DEBUG    | __main__:main:113 -   Max 400701.0
+2024-07-08 11:23:38.081 | DEBUG    | __main__:main:114 -   Avg 381905.04333333333
+2024-07-08 11:23:38.081 | DEBUG    | __main__:main:115 -   Std 5285.6598719047015
+2024-07-08 11:23:38.082 | DEBUG    | __main__:main:67 - -- Generation 6 --
+2024-07-08 11:24:04.542 | DEBUG    | __main__:main:99 -   Evaluated 196 individuals
+2024-07-08 11:24:04.542 | DEBUG    | __main__:main:112 -   Min 360682.0
+2024-07-08 11:24:04.543 | DEBUG    | __main__:main:113 -   Max 394699.0
+2024-07-08 11:24:04.543 | DEBUG    | __main__:main:114 -   Avg 377939.67333333334
+2024-07-08 11:24:04.543 | DEBUG    | __main__:main:115 -   Std 4967.806214009968
+2024-07-08 11:24:04.543 | DEBUG    | __main__:main:67 - -- Generation 7 --
+2024-07-08 11:24:27.422 | DEBUG    | __main__:main:99 -   Evaluated 172 individuals
+2024-07-08 11:24:27.422 | DEBUG    | __main__:main:112 -   Min 360682.0
+2024-07-08 11:24:27.423 | DEBUG    | __main__:main:113 -   Max 388692.0
+2024-07-08 11:24:27.423 | DEBUG    | __main__:main:114 -   Avg 374338.2166666667
+2024-07-08 11:24:27.423 | DEBUG    | __main__:main:115 -   Std 4859.627967553918
+2024-07-08 11:24:27.423 | DEBUG    | __main__:main:67 - -- Generation 8 --
+2024-07-08 11:24:48.275 | DEBUG    | __main__:main:99 -   Evaluated 173 individuals
+2024-07-08 11:24:48.276 | DEBUG    | __main__:main:112 -   Min 357685.0
+2024-07-08 11:24:48.276 | DEBUG    | __main__:main:113 -   Max 383699.0
+2024-07-08 11:24:48.276 | DEBUG    | __main__:main:114 -   Avg 370920.06
+2024-07-08 11:24:48.276 | DEBUG    | __main__:main:115 -   Std 4473.486142044203
+2024-07-08 11:24:48.276 | DEBUG    | __main__:main:67 - -- Generation 9 --
+2024-07-08 11:25:09.450 | DEBUG    | __main__:main:99 -   Evaluated 173 individuals
+2024-07-08 11:25:09.451 | DEBUG    | __main__:main:112 -   Min 352685.0
+2024-07-08 11:25:09.451 | DEBUG    | __main__:main:113 -   Max 383701.0
+2024-07-08 11:25:09.451 | DEBUG    | __main__:main:114 -   Avg 368302.5733333333
+2024-07-08 11:25:09.451 | DEBUG    | __main__:main:115 -   Std 4775.643592715006
+2024-07-08 11:25:09.452 | DEBUG    | __main__:main:67 - -- Generation 10 --
+2024-07-08 11:25:30.689 | DEBUG    | __main__:main:99 -   Evaluated 172 individuals
+2024-07-08 11:25:30.689 | DEBUG    | __main__:main:112 -   Min 353683.0
+2024-07-08 11:25:30.690 | DEBUG    | __main__:main:113 -   Max 380695.0
+2024-07-08 11:25:30.690 | DEBUG    | __main__:main:114 -   Avg 365164.74666666664
+2024-07-08 11:25:30.690 | DEBUG    | __main__:main:115 -   Std 4720.932043128239
+2024-07-08 11:25:30.690 | DEBUG    | __main__:main:67 - -- Generation 11 --
+2024-07-08 11:25:54.685 | DEBUG    | __main__:main:99 -   Evaluated 189 individuals
+2024-07-08 11:25:54.686 | DEBUG    | __main__:main:112 -   Min 350679.0
+2024-07-08 11:25:54.686 | DEBUG    | __main__:main:113 -   Max 376691.0
+2024-07-08 11:25:54.686 | DEBUG    | __main__:main:114 -   Avg 361989.67
+2024-07-08 11:25:54.686 | DEBUG    | __main__:main:115 -   Std 4390.3376378642715
+2024-07-08 11:25:54.686 | DEBUG    | __main__:main:67 - -- Generation 12 --
+2024-07-08 11:26:18.919 | DEBUG    | __main__:main:99 -   Evaluated 175 individuals
+2024-07-08 11:26:18.920 | DEBUG    | __main__:main:112 -   Min 345684.0
+2024-07-08 11:26:18.920 | DEBUG    | __main__:main:113 -   Max 373694.0
+2024-07-08 11:26:18.920 | DEBUG    | __main__:main:114 -   Avg 359501.37333333335
+2024-07-08 11:26:18.921 | DEBUG    | __main__:main:115 -   Std 4314.8333000577895
+2024-07-08 11:26:18.921 | DEBUG    | __main__:main:67 - -- Generation 13 --
+2024-07-08 11:26:45.037 | DEBUG    | __main__:main:99 -   Evaluated 178 individuals
+2024-07-08 11:26:45.038 | DEBUG    | __main__:main:112 -   Min 341680.0
+2024-07-08 11:26:45.038 | DEBUG    | __main__:main:113 -   Max 371697.0
+2024-07-08 11:26:45.038 | DEBUG    | __main__:main:114 -   Avg 356730.0966666667
+2024-07-08 11:26:45.038 | DEBUG    | __main__:main:115 -   Std 4471.843180088847
+2024-07-08 11:26:45.038 | DEBUG    | __main__:main:67 - -- Generation 14 --
+2024-07-08 11:27:13.464 | DEBUG    | __main__:main:99 -   Evaluated 195 individuals
+2024-07-08 11:27:13.465 | DEBUG    | __main__:main:112 -   Min 341682.0
+2024-07-08 11:27:13.465 | DEBUG    | __main__:main:113 -   Max 368694.0
+2024-07-08 11:27:13.465 | DEBUG    | __main__:main:114 -   Avg 354612.5833333333
+2024-07-08 11:27:13.465 | DEBUG    | __main__:main:115 -   Std 4662.684037089933
+2024-07-08 11:27:13.465 | DEBUG    | __main__:main:67 - -- Generation 15 --
+2024-07-08 11:27:35.663 | DEBUG    | __main__:main:99 -   Evaluated 169 individuals
+2024-07-08 11:27:35.664 | DEBUG    | __main__:main:112 -   Min 338679.0
+2024-07-08 11:27:35.664 | DEBUG    | __main__:main:113 -   Max 367687.0
+2024-07-08 11:27:35.664 | DEBUG    | __main__:main:114 -   Avg 352135.2366666667
+2024-07-08 11:27:35.664 | DEBUG    | __main__:main:115 -   Std 4916.676245930451
+2024-07-08 11:27:35.664 | DEBUG    | __main__:main:67 - -- Generation 16 --
+2024-07-08 11:28:00.208 | DEBUG    | __main__:main:99 -   Evaluated 177 individuals
+2024-07-08 11:28:00.209 | DEBUG    | __main__:main:112 -   Min 336669.0
+2024-07-08 11:28:00.209 | DEBUG    | __main__:main:113 -   Max 368683.0
+2024-07-08 11:28:00.209 | DEBUG    | __main__:main:114 -   Avg 349254.76
+2024-07-08 11:28:00.209 | DEBUG    | __main__:main:115 -   Std 5484.7772342230555
+2024-07-08 11:28:00.209 | DEBUG    | __main__:main:67 - -- Generation 17 --
+2024-07-08 11:28:27.179 | DEBUG    | __main__:main:99 -   Evaluated 182 individuals
+2024-07-08 11:28:27.180 | DEBUG    | __main__:main:112 -   Min 336669.0
+2024-07-08 11:28:27.180 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:28:27.180 | DEBUG    | __main__:main:114 -   Avg 67010699.39
+2024-07-08 11:28:27.180 | DEBUG    | __main__:main:115 -   Std 813742190.05612
+2024-07-08 11:28:27.180 | DEBUG    | __main__:main:67 - -- Generation 18 --
+2024-07-08 11:28:53.349 | DEBUG    | __main__:main:99 -   Evaluated 173 individuals
+2024-07-08 11:28:53.350 | DEBUG    | __main__:main:112 -   Min 336669.0
+2024-07-08 11:28:53.350 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:28:53.350 | DEBUG    | __main__:main:114 -   Avg 200337410.06333333
+2024-07-08 11:28:53.350 | DEBUG    | __main__:main:115 -   Std 1399951798.4286284
+2024-07-08 11:28:53.350 | DEBUG    | __main__:main:67 - -- Generation 19 --
+2024-07-08 11:29:18.782 | DEBUG    | __main__:main:99 -   Evaluated 172 individuals
+2024-07-08 11:29:18.782 | DEBUG    | __main__:main:112 -   Min 336669.0
+2024-07-08 11:29:18.782 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:29:18.783 | DEBUG    | __main__:main:114 -   Avg 266999634.23666668
+2024-07-08 11:29:18.783 | DEBUG    | __main__:main:115 -   Std 1611017683.1342971
+2024-07-08 11:29:18.783 | DEBUG    | __main__:main:67 - -- Generation 20 --
+2024-07-08 11:29:47.271 | DEBUG    | __main__:main:99 -   Evaluated 192 individuals
+2024-07-08 11:29:47.272 | DEBUG    | __main__:main:112 -   Min 336669.0
+2024-07-08 11:29:47.272 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:29:47.272 | DEBUG    | __main__:main:114 -   Avg 933642764.96
+2024-07-08 11:29:47.272 | DEBUG    | __main__:main:115 -   Std 2908890617.490409
+2024-07-08 11:29:47.272 | DEBUG    | __main__:main:67 - -- Generation 21 --
+2024-07-08 11:30:12.305 | DEBUG    | __main__:main:99 -   Evaluated 185 individuals
+2024-07-08 11:30:12.306 | DEBUG    | __main__:main:112 -   Min 336669.0
+2024-07-08 11:30:12.306 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:30:12.306 | DEBUG    | __main__:main:114 -   Avg 1366960551.3933334
+2024-07-08 11:30:12.306 | DEBUG    | __main__:main:115 -   Std 3434834146.6395597
+2024-07-08 11:30:12.306 | DEBUG    | __main__:main:67 - -- Generation 22 --
+2024-07-08 11:30:40.388 | DEBUG    | __main__:main:99 -   Evaluated 188 individuals
+2024-07-08 11:30:40.389 | DEBUG    | __main__:main:112 -   Min 336669.0
+2024-07-08 11:30:40.389 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:30:40.389 | DEBUG    | __main__:main:114 -   Avg 800313119.7033334
+2024-07-08 11:30:40.389 | DEBUG    | __main__:main:115 -   Std 2712839658.995342
+2024-07-08 11:30:40.389 | DEBUG    | __main__:main:67 - -- Generation 23 --
+2024-07-08 11:31:07.734 | DEBUG    | __main__:main:99 -   Evaluated 182 individuals
+2024-07-08 11:31:07.735 | DEBUG    | __main__:main:112 -   Min 336669.0
+2024-07-08 11:31:07.735 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:31:07.735 | DEBUG    | __main__:main:114 -   Avg 1166966377.28
+2024-07-08 11:31:07.735 | DEBUG    | __main__:main:115 -   Std 3210117792.2831807
+2024-07-08 11:31:07.735 | DEBUG    | __main__:main:67 - -- Generation 24 --
+2024-07-08 11:31:31.404 | DEBUG    | __main__:main:99 -   Evaluated 172 individuals
+2024-07-08 11:31:31.405 | DEBUG    | __main__:main:112 -   Min 336666.0
+2024-07-08 11:31:31.405 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:31:31.405 | DEBUG    | __main__:main:114 -   Avg 1400291727.5533333
+2024-07-08 11:31:31.405 | DEBUG    | __main__:main:115 -   Std 3469752609.901346
+2024-07-08 11:31:31.405 | DEBUG    | __main__:main:67 - -- Generation 25 --
+2024-07-08 11:31:56.746 | DEBUG    | __main__:main:99 -   Evaluated 179 individuals
+2024-07-08 11:31:56.747 | DEBUG    | __main__:main:112 -   Min 336666.0
+2024-07-08 11:31:56.747 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:31:56.747 | DEBUG    | __main__:main:114 -   Avg 1300294957.08
+2024-07-08 11:31:56.747 | DEBUG    | __main__:main:115 -   Std 3362920326.4432397
+2024-07-08 11:31:56.747 | DEBUG    | __main__:main:67 - -- Generation 26 --
+2024-07-08 11:32:21.416 | DEBUG    | __main__:main:99 -   Evaluated 168 individuals
+2024-07-08 11:32:21.417 | DEBUG    | __main__:main:112 -   Min 336666.0
+2024-07-08 11:32:21.417 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:32:21.417 | DEBUG    | __main__:main:114 -   Avg 1066969475.41
+2024-07-08 11:32:21.417 | DEBUG    | __main__:main:115 -   Std 3086785205.635824
+2024-07-08 11:32:21.417 | DEBUG    | __main__:main:67 - -- Generation 27 --
+2024-07-08 11:32:45.328 | DEBUG    | __main__:main:99 -   Evaluated 171 individuals
+2024-07-08 11:32:45.329 | DEBUG    | __main__:main:112 -   Min 336666.0
+2024-07-08 11:32:45.329 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:32:45.329 | DEBUG    | __main__:main:114 -   Avg 1400291629.0666666
+2024-07-08 11:32:45.329 | DEBUG    | __main__:main:115 -   Std 3469752649.6382504
+2024-07-08 11:32:45.329 | DEBUG    | __main__:main:67 - -- Generation 28 --
+2024-07-08 11:33:11.730 | DEBUG    | __main__:main:99 -   Evaluated 188 individuals
+2024-07-08 11:33:11.731 | DEBUG    | __main__:main:112 -   Min 336666.0
+2024-07-08 11:33:11.731 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:33:11.731 | DEBUG    | __main__:main:114 -   Avg 1566952857.4133334
+2024-07-08 11:33:11.731 | DEBUG    | __main__:main:115 -   Std 3634738711.8352127
+2024-07-08 11:33:11.731 | DEBUG    | __main__:main:67 - -- Generation 29 --
+2024-07-08 11:33:39.692 | DEBUG    | __main__:main:99 -   Evaluated 187 individuals
+2024-07-08 11:33:39.693 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:33:39.693 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:33:39.693 | DEBUG    | __main__:main:114 -   Avg 1500288501.4666667
+2024-07-08 11:33:39.693 | DEBUG    | __main__:main:115 -   Std 3570593018.99583
+2024-07-08 11:33:39.693 | DEBUG    | __main__:main:67 - -- Generation 30 --
+2024-07-08 11:34:07.918 | DEBUG    | __main__:main:99 -   Evaluated 190 individuals
+2024-07-08 11:34:07.918 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:34:07.919 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:34:07.919 | DEBUG    | __main__:main:114 -   Avg 1566953410.2533333
+2024-07-08 11:34:07.919 | DEBUG    | __main__:main:115 -   Std 3634738473.5551662
+2024-07-08 11:34:07.919 | DEBUG    | __main__:main:67 - -- Generation 31 --
+2024-07-08 11:34:35.216 | DEBUG    | __main__:main:99 -   Evaluated 178 individuals
+2024-07-08 11:34:35.217 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:34:35.217 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:34:35.217 | DEBUG    | __main__:main:114 -   Avg 1400292370.8
+2024-07-08 11:34:35.217 | DEBUG    | __main__:main:115 -   Std 3469752350.3690724
+2024-07-08 11:34:35.217 | DEBUG    | __main__:main:67 - -- Generation 32 --
+2024-07-08 11:35:00.791 | DEBUG    | __main__:main:99 -   Evaluated 168 individuals
+2024-07-08 11:35:00.791 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:35:00.792 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:35:00.792 | DEBUG    | __main__:main:114 -   Avg 1133634418.1933334
+2024-07-08 11:35:00.792 | DEBUG    | __main__:main:115 -   Std 3169890603.665669
+2024-07-08 11:35:00.792 | DEBUG    | __main__:main:67 - -- Generation 33 --
+2024-07-08 11:35:24.783 | DEBUG    | __main__:main:99 -   Evaluated 176 individuals
+2024-07-08 11:35:24.784 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:35:24.784 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:35:24.784 | DEBUG    | __main__:main:114 -   Avg 1300295506.57
+2024-07-08 11:35:24.784 | DEBUG    | __main__:main:115 -   Std 3362920114.0350747
+2024-07-08 11:35:24.785 | DEBUG    | __main__:main:67 - -- Generation 34 --
+2024-07-08 11:35:48.801 | DEBUG    | __main__:main:99 -   Evaluated 180 individuals
+2024-07-08 11:35:48.802 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:35:48.802 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:35:48.802 | DEBUG    | __main__:main:114 -   Avg 1666949481.2
+2024-07-08 11:35:48.802 | DEBUG    | __main__:main:115 -   Std 3726653483.54969
+2024-07-08 11:35:48.802 | DEBUG    | __main__:main:67 - -- Generation 35 --
+2024-07-08 11:36:15.871 | DEBUG    | __main__:main:99 -   Evaluated 179 individuals
+2024-07-08 11:36:15.872 | DEBUG    | __main__:main:112 -   Min 336660.0
+2024-07-08 11:36:15.872 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:36:15.872 | DEBUG    | __main__:main:114 -   Avg 1233630699.6933334
+2024-07-08 11:36:15.872 | DEBUG    | __main__:main:115 -   Std 3288082834.8021917
+2024-07-08 11:36:15.872 | DEBUG    | __main__:main:67 - -- Generation 36 --
+2024-07-08 11:36:42.580 | DEBUG    | __main__:main:99 -   Evaluated 183 individuals
+2024-07-08 11:36:42.581 | DEBUG    | __main__:main:112 -   Min 336660.0
+2024-07-08 11:36:42.581 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:36:42.581 | DEBUG    | __main__:main:114 -   Avg 866976159.8933333
+2024-07-08 11:36:42.581 | DEBUG    | __main__:main:115 -   Std 2813364375.2626505
+2024-07-08 11:36:42.581 | DEBUG    | __main__:main:67 - -- Generation 37 --
+2024-07-08 11:37:10.042 | DEBUG    | __main__:main:99 -   Evaluated 176 individuals
+2024-07-08 11:37:10.043 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:37:10.043 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:37:10.043 | DEBUG    | __main__:main:114 -   Avg 566985755.2033334
+2024-07-08 11:37:10.043 | DEBUG    | __main__:main:115 -   Std 2311967544.5115094
+2024-07-08 11:37:10.043 | DEBUG    | __main__:main:67 - -- Generation 38 --
+2024-07-08 11:37:34.315 | DEBUG    | __main__:main:99 -   Evaluated 167 individuals
+2024-07-08 11:37:34.316 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:37:34.316 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:37:34.316 | DEBUG    | __main__:main:114 -   Avg 333660376.8466667
+2024-07-08 11:37:34.316 | DEBUG    | __main__:main:115 -   Std 1794994205.0733678
+2024-07-08 11:37:34.316 | DEBUG    | __main__:main:67 - -- Generation 39 --
+2024-07-08 11:37:57.759 | DEBUG    | __main__:main:99 -   Evaluated 162 individuals
+2024-07-08 11:37:57.760 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:37:57.760 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:37:57.760 | DEBUG    | __main__:main:114 -   Avg 100334845.34333333
+2024-07-08 11:37:57.760 | DEBUG    | __main__:main:115 -   Std 994953783.7894123
+2024-07-08 11:37:57.760 | DEBUG    | __main__:main:67 - -- Generation 40 --
+2024-07-08 11:38:25.781 | DEBUG    | __main__:main:99 -   Evaluated 175 individuals
+2024-07-08 11:38:25.781 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:38:25.782 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:38:25.782 | DEBUG    | __main__:main:114 -   Avg 67002617.48
+2024-07-08 11:38:25.782 | DEBUG    | __main__:main:115 -   Std 813742852.1448876
+2024-07-08 11:38:25.782 | DEBUG    | __main__:main:67 - -- Generation 41 --
+2024-07-08 11:38:53.098 | DEBUG    | __main__:main:99 -   Evaluated 189 individuals
+2024-07-08 11:38:53.099 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:38:53.099 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:38:53.099 | DEBUG    | __main__:main:114 -   Avg 100334862.03
+2024-07-08 11:38:53.099 | DEBUG    | __main__:main:115 -   Std 994953782.1123514
+2024-07-08 11:38:53.099 | DEBUG    | __main__:main:67 - -- Generation 42 --
+2024-07-08 11:39:22.713 | DEBUG    | __main__:main:99 -   Evaluated 201 individuals
+2024-07-08 11:39:22.713 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:39:22.714 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:39:22.714 | DEBUG    | __main__:main:114 -   Avg 67002597.416666664
+2024-07-08 11:39:22.714 | DEBUG    | __main__:main:115 -   Std 813742853.7887685
+2024-07-08 11:39:22.714 | DEBUG    | __main__:main:67 - -- Generation 43 --
+2024-07-08 11:39:49.031 | DEBUG    | __main__:main:99 -   Evaluated 186 individuals
+2024-07-08 11:39:49.031 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:39:49.031 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:39:49.032 | DEBUG    | __main__:main:114 -   Avg 33670933.403333336
+2024-07-08 11:39:49.032 | DEBUG    | __main__:main:115 -   Std 576367691.5680462
+2024-07-08 11:39:49.032 | DEBUG    | __main__:main:67 - -- Generation 44 --
+2024-07-08 11:40:14.194 | DEBUG    | __main__:main:99 -   Evaluated 175 individuals
+2024-07-08 11:40:14.195 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:40:14.195 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:40:14.195 | DEBUG    | __main__:main:114 -   Avg 67002454.07
+2024-07-08 11:40:14.195 | DEBUG    | __main__:main:115 -   Std 813742865.5316101
+2024-07-08 11:40:14.196 | DEBUG    | __main__:main:67 - -- Generation 45 --
+2024-07-08 11:40:44.029 | DEBUG    | __main__:main:99 -   Evaluated 189 individuals
+2024-07-08 11:40:44.030 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:40:44.030 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:40:44.030 | DEBUG    | __main__:main:114 -   Avg 67002547.36333334
+2024-07-08 11:40:44.031 | DEBUG    | __main__:main:115 -   Std 813742857.8892311
+2024-07-08 11:40:44.031 | DEBUG    | __main__:main:67 - -- Generation 46 --
+2024-07-08 11:41:12.277 | DEBUG    | __main__:main:99 -   Evaluated 189 individuals
+2024-07-08 11:41:12.278 | DEBUG    | __main__:main:112 -   Min 336664.0
+2024-07-08 11:41:12.278 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:41:12.278 | DEBUG    | __main__:main:114 -   Avg 166999564.38
+2024-07-08 11:41:12.278 | DEBUG    | __main__:main:115 -   Std 1280147618.262976
+2024-07-08 11:41:12.278 | DEBUG    | __main__:main:67 - -- Generation 47 --
+2024-07-08 11:41:41.367 | DEBUG    | __main__:main:99 -   Evaluated 196 individuals
+2024-07-08 11:41:41.368 | DEBUG    | __main__:main:112 -   Min 336663.0
+2024-07-08 11:41:41.368 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:41:41.369 | DEBUG    | __main__:main:114 -   Avg 67002417.4
+2024-07-08 11:41:41.369 | DEBUG    | __main__:main:115 -   Std 813742868.5345621
+2024-07-08 11:41:41.369 | DEBUG    | __main__:main:67 - -- Generation 48 --
+2024-07-08 11:42:08.867 | DEBUG    | __main__:main:99 -   Evaluated 177 individuals
+2024-07-08 11:42:08.867 | DEBUG    | __main__:main:112 -   Min 336663.0
+2024-07-08 11:42:08.868 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:42:08.868 | DEBUG    | __main__:main:114 -   Avg 33670673.32333333
+2024-07-08 11:42:08.868 | DEBUG    | __main__:main:115 -   Std 576367706.6048832
+2024-07-08 11:42:08.868 | DEBUG    | __main__:main:67 - -- Generation 49 --
+2024-07-08 11:42:37.868 | DEBUG    | __main__:main:99 -   Evaluated 193 individuals
+2024-07-08 11:42:37.869 | DEBUG    | __main__:main:112 -   Min 336663.0
+2024-07-08 11:42:37.869 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:42:37.869 | DEBUG    | __main__:main:114 -   Avg 100335045.34666666
+2024-07-08 11:42:37.869 | DEBUG    | __main__:main:115 -   Std 994953763.6884636
+2024-07-08 11:42:37.869 | DEBUG    | __main__:main:67 - -- Generation 50 --
+2024-07-08 11:43:01.051 | DEBUG    | __main__:main:99 -   Evaluated 156 individuals
+2024-07-08 11:43:01.051 | DEBUG    | __main__:main:112 -   Min 336663.0
+2024-07-08 11:43:01.051 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:43:01.052 | DEBUG    | __main__:main:114 -   Avg 67002540.70666666
+2024-07-08 11:43:01.052 | DEBUG    | __main__:main:115 -   Std 813742858.4335294
+2024-07-08 11:43:01.052 | DEBUG    | __main__:main:67 - -- Generation 51 --
+2024-07-08 11:43:26.547 | DEBUG    | __main__:main:99 -   Evaluated 175 individuals
+2024-07-08 11:43:26.548 | DEBUG    | __main__:main:112 -   Min 336663.0
+2024-07-08 11:43:26.548 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:43:26.548 | DEBUG    | __main__:main:114 -   Avg 100335008.54666667
+2024-07-08 11:43:26.549 | DEBUG    | __main__:main:115 -   Std 994953767.3873765
+2024-07-08 11:43:26.549 | DEBUG    | __main__:main:67 - -- Generation 52 --
+2024-07-08 11:43:51.782 | DEBUG    | __main__:main:99 -   Evaluated 182 individuals
+2024-07-08 11:43:51.783 | DEBUG    | __main__:main:112 -   Min 336663.0
+2024-07-08 11:43:51.783 | DEBUG    | __main__:main:113 -   Max 9999999999.0
+2024-07-08 11:43:51.783 | DEBUG    | __main__:main:114 -   Avg 166999233.83
+2024-07-08 11:43:51.783 | DEBUG    | __main__:main:115 -   Std 1280147661.2956607
+2024-07-08 11:43:51.784 | DEBUG    | __main__:main:67 - -- Generation 53 --
