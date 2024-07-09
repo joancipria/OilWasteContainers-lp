@@ -7,11 +7,11 @@ from deap import tools
 from deap import algorithms
 
 from data import individual_size
-from ga_functions import eval_fitness, feasible
+from ga_functions import eval_fitness, feasible, max_containers
 
 from loguru import logger
 
-logger.add("./logs/deap_run_{time}.log")
+logger.add("./logs/run_{time}.log")
 
 # --- Parameters ---
 not_feasible_penalty = 99999999
@@ -68,6 +68,26 @@ def main(pop_size, cxpb, mutpb, ngen):
         verbose=True,
     )
 
+    return pop, log, hof
+
 
 if __name__ == "__main__":
-    main(pop_size, cxpb, mutpb, ngen)
+    logger.debug("--------------------")
+    logger.debug("---- GA started ----")
+    logger.debug("--------------------")
+    logger.debug("\n")
+    logger.debug(f"--- Params ---")
+    logger.debug(
+        f"max_containers: {max_containers}, not_feasible_penalty: {not_feasible_penalty}, cxpb: {cxpb}, mutpb: {mutpb}, ngen: {ngen}, pop_size: {pop_size}, tournament_size: {tournament_size}, indpb_mate: {indpb_mate}, indpb_mutate: {indpb_mutate}"
+    )
+    logger.debug(f"-------------------")
+
+    pop, log, hof = main(pop_size, cxpb, mutpb, ngen)
+
+    logger.debug("--- Final results ---")
+    best_individual = hof.items[0]
+    best_fitness = eval_fitness(hof.items[0])
+    logger.debug(log)
+    logger.debug(
+        f"Best individual: {best_individual}, Fitness: {best_fitness}, Containers: {best_individual.count(1)}"
+    )
