@@ -1,4 +1,3 @@
-import random
 from shapely import (
     to_geojson,
     voronoi_polygons,
@@ -7,6 +6,9 @@ from shapely import (
 )
 from utils import get_population_from_polygon
 from data import valencia_region_polygon, get_solution_coords
+
+max_containers = 250
+service_level = 1 * 1000  # Service level, containers per inhabitants
 
 
 def eval_fitness(solution):
@@ -38,15 +40,15 @@ def eval_fitness(solution):
 
             # Store it
             dict_polygon["population"] = population
+
+            if population <= service_level:
+                dict_polygon["score"] = service_level - population
+            else:
+                dict_polygon["score"] = population - service_level
+
             voronoi.append(dict_polygon)
 
-    # SL (Service Level, 1 container per 1000 inhabitants)
-    service_level = 1 * 1000
-
-    return (sum(voronoi[i]["population"] - service_level for i in range(len(voronoi))),)
-
-
-max_containers = 250
+    return (sum(voronoi[i]["score"] for i in range(len(voronoi))),)
 
 
 def feasible(individual):
