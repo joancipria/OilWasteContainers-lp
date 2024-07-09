@@ -41,10 +41,7 @@ def eval_fitness(solution):
             # Store it
             dict_polygon["population"] = population
 
-            if population <= service_level:
-                dict_polygon["score"] = service_level - population
-            else:
-                dict_polygon["score"] = population - service_level
+            dict_polygon["score"] = abs(population - service_level)
 
             voronoi.append(dict_polygon)
 
