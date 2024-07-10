@@ -1,19 +1,29 @@
+from deap import creator
 from shapely import (
     to_geojson,
     voronoi_polygons,
     intersection,
     MultiPoint,
 )
-from utils import get_population_from_polygon
-from data import valencia_region_polygon, get_solution_coords
+from utils import get_population_from_polygon, get_solution_coords
+from data import valencia_region_polygon, individual_size, possible_locations
+import random
 
-max_containers = 250
+max_containers = 352
 service_level = 1 * 1000  # Service level, containers per inhabitants
+
+
+def create_individual():
+    individual = [0] * individual_size
+    ones_indices = random.sample(range(3000), max_containers)
+    for i in ones_indices:
+        individual[i] = 1
+    return creator.Individual(individual)
 
 
 def eval_fitness(solution):
     # Get solution coords
-    solution_coords = get_solution_coords(solution)
+    solution_coords = get_solution_coords(solution, possible_locations)
 
     # Generate voronoi polygons
     voronoi = voronoi_polygons(
@@ -41,7 +51,11 @@ def eval_fitness(solution):
             # Store it
             dict_polygon["population"] = population
 
-            dict_polygon["score"] = abs(population - service_level)
+            # Get score
+            if population >= service_level:
+                dict_polygon["score"] = population - service_level
+            else:
+                dict_polygon["score"] = 0
 
             voronoi.append(dict_polygon)
 
