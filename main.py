@@ -6,20 +6,19 @@ from deap import creator
 from deap import tools
 from deap import algorithms
 
-from data import individual_size
-from ga_functions import eval_fitness, feasible, max_containers
+from ga_functions import eval_fitness, feasible, max_containers, create_individual
 
 from loguru import logger
 
 logger.add("./logs/run_{time}.log")
 
 # --- Parameters ---
-not_feasible_penalty = 99999999
+not_feasible_penalty = 900000
 cxpb = 0.8  # The probability of mating two individuals.
 mutpb = 0.2  # The probability of mutating an individual.
-ngen = 40  # Number of generations
+ngen = 200  # Number of generations
 pop_size = 300
-tournament_size = 3
+tournament_size = 4
 indpb_mate = 0.5  # Independent probability for each attribute to be exchanged
 indpb_mutate = 0.05  # Independent probability for each attribute to be flipped.
 
@@ -33,10 +32,11 @@ toolbox = base.Toolbox()
 toolbox.register("attr_bool", random.randint, 0, 1)
 toolbox.register(
     "individual",
-    tools.initRepeat,
-    creator.Individual,
-    toolbox.attr_bool,
-    individual_size,
+    create_individual,
+    # tools.initRepeat,
+    # creator.Individual,
+    # toolbox.attr_bool,
+    # individual_size,
 )
 toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 
