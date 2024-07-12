@@ -1,8 +1,9 @@
 import json
 import rasterio
 from rasterio.mask import mask
-from shapely.geometry import Point, LineString
+from shapely.geometry import Point, LineString, Polygon
 from pyproj import Geod
+import requests
 
 geod = Geod(ellps="WGS84")
 
@@ -74,3 +75,30 @@ def get_solution_coords(solution_vector, possible_locations):
         if solution_vector[i] == 1:
             points.append(location)
     return points
+
+
+def get_isochrone(location, minutes):
+    """
+    Returns isochrone polygon given a location and minutes
+    """
+    try:
+        # Calc isochrones
+        isochrone_range = [minutes * 60]
+
+        headers = {
+            "Accept": "application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8",
+            "Authorization": "5b3ce3597851110001cf62487c1cebfad2324c61823ac5e4fe9be9b1",  # Private
+            "Content-Type": "application/json; charset=utf-8",
+        }
+
+        body = {"locations": [location], "range": isochrone_range}
+        call = requests.post(
+            " http://localhost:8080/ors/v2/isochrones/foot-walking",
+            json=body,
+            headers=headers,
+        )
+        result = call.json()
+
+        return Polygon(result["features"][0]["geometry"]["coordinates"][0])
+    except ValueError as error:
+        return {"error": error}
