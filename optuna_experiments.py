@@ -96,7 +96,7 @@ study = optuna.create_study(
     study_name=study_name,
     load_if_exists=True,
 )
-study.optimize(objective, n_trials=10)
+study.optimize(objective, n_trials=600)
 
 # Print the best hyperparameters found by Optuna
 logger.debug("Best trial:")
