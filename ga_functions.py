@@ -67,3 +67,7 @@ def feasible(individual):
         return False
     else:
         return True
+
+
+def distance(individual):
+    return individual.count(1) - max_containers
