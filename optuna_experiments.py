@@ -5,7 +5,8 @@ from deap import base, creator, tools, algorithms
 from ga_functions import eval_fitness, feasible, distance, create_individual
 from loguru import logger
 
-logger.add("./logs/run_{time}.log")
+study_name="preliminary-test"
+logger.add("./logs/{study_name}_{time}.log")
 
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMin)
@@ -14,7 +15,7 @@ creator.create("Individual", list, fitness=creator.FitnessMin)
 def objective(trial):
     # --- Fixed params ---
     not_feasible_penalty = 900000
-    ngen = 3  # Number of generations
+    ngen = 300  # Number of generations
 
     # --- Optimisation parameters ---
 
@@ -30,7 +31,7 @@ def objective(trial):
     # Independent probability for each attribute to be exchanged 0.1 to 0.5
     indpb_mate = trial.suggest_float("indpb_mate", 0.1, 0.5, step=0.1)
 
-    population_size = trial.suggest_int("population_size", 5, 10, step=1)
+    population_size = trial.suggest_int("population_size", 100, 500, step=100)
     tournament_size = trial.suggest_int("tournament_size", 2, 8, step=2)
 
     toolbox = base.Toolbox()
@@ -92,7 +93,7 @@ def objective(trial):
 study = optuna.create_study(
     direction="minimize",
     storage="sqlite:///db.sqlite3",  # Specify the storage URL here.
-    study_name="preliminary-test",
+    study_name=study_name,
     load_if_exists=True,
 )
 study.optimize(objective, n_trials=10)
