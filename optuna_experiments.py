@@ -3,7 +3,9 @@ import random
 import numpy
 from deap import base, creator, tools, algorithms
 from ga_functions import eval_fitness, feasible, distance, create_individual
+from loguru import logger
 
+logger.add("./logs/run_{time}.log")
 
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMin)
@@ -28,7 +30,7 @@ def objective(trial):
     # Independent probability for each attribute to be exchanged 0.1 to 0.5
     indpb_mate = trial.suggest_float("indpb_mate", 0.1, 0.5, step=0.1)
 
-    population_size = trial.suggest_int("population_size", 100, 500, step=100)
+    population_size = trial.suggest_int("population_size", 5, 10, step=1)
     tournament_size = trial.suggest_int("tournament_size", 2, 8, step=2)
 
     toolbox = base.Toolbox()
@@ -73,6 +75,16 @@ def objective(trial):
     best_individual = hof.items[0]
     best_fitness = eval_fitness(best_individual)
 
+    best_gen = -1
+    for gen, record in enumerate(log):
+        if record["min"] == best_fitness[0]:
+            best_gen = gen
+            break
+
+    logger.debug(
+        f"Best individual: {best_individual}, Fitness: {best_fitness}, Containers: {best_individual.count(1)}, Generation: {best_gen}"
+    )
+
     return best_fitness
 
 
@@ -80,15 +92,15 @@ def objective(trial):
 study = optuna.create_study(
     direction="minimize",
     storage="sqlite:///db.sqlite3",  # Specify the storage URL here.
-    study_name="test-1",
+    study_name="preliminary-test",
     load_if_exists=True,
 )
-study.optimize(objective, n_trials=600)
+study.optimize(objective, n_trials=10)
 
 # Print the best hyperparameters found by Optuna
-print("Best trial:")
+logger.debug("Best trial:")
 best_trial = study.best_trial
-print(f"  Value: {best_trial.value}")
-print("  Params: ")
+logger.debug(f"  Value: {best_trial.value}")
+logger.debug("  Params: ")
 for key, value in best_trial.params.items():
-    print(f"    {key}: {value}")
+    logger.debug(f"    {key}: {value}")
