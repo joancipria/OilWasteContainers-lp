@@ -2,31 +2,34 @@ import optuna
 import random
 import numpy
 from deap import base, creator, tools, algorithms
-from ga_functions import eval_fitness, feasible, max_containers, create_individual
+from ga_functions import eval_fitness, feasible, distance, create_individual
 
 
-# Define la función objetivo que ejecuta tu algoritmo genético
+creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
+creator.create("Individual", list, fitness=creator.FitnessMin)
+
+
 def objective(trial):
-    # Parametros fijos
+    # --- Fixed params ---
     not_feasible_penalty = 900000
-    ngen = 200  # Number of generations
-    indpb_mate = 0.5  # Independent probability for each attribute to be exchanged
-    indpb_mutate = 0.05  # Independent probability for each attribute to be flipped.
+    ngen = 3  # Number of generations
 
-    # Define los parámetros a optimizar
-    mutation_prob = trial.suggest_uniform("mutation_prob", 0.01, 0.5)
-    crossover_prob = trial.suggest_uniform("crossover_prob", 0.2, 0.8)
-    population_size = trial.suggest_categorical("population_size", [200, 300, 400, 500])
-    tournament_size = trial.suggest_categorical("tournament_size", [2, 4, 6, 8, 10])
+    # --- Optimisation parameters ---
 
-    # Configura DEAP con los parámetros sugeridos por Optuna
-    # Aquí construyes tu algoritmo genético con DEAP y configuras los operadores,
-    # la población inicial, etc., utilizando los valores de mutation_prob,
-    # crossover_prob y population_size
+    # The probability of mutating an individual. From 0.01 to 0.5
+    mutation_prob = trial.suggest_float("mutation_prob", 0.01, 0.5, step=0.01)
 
-    # Ejemplo simplificado de configuración de DEAP
-    creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
-    creator.create("Individual", list, fitness=creator.FitnessMin)
+    # Independent probability for each attribute to be flipped. 0.05 to 0.2,
+    indpb_mutate = trial.suggest_float("indpb_mutate", 0.05, 0.2, step=0.01)
+
+    # The probability of mating two individuals.
+    crossover_prob = trial.suggest_float("crossover_prob", 0.1, 0.8, step=0.1)  #
+
+    # Independent probability for each attribute to be exchanged 0.1 to 0.5
+    indpb_mate = trial.suggest_float("indpb_mate", 0.1, 0.5, step=0.1)
+
+    population_size = trial.suggest_int("population_size", 100, 500, step=100)
+    tournament_size = trial.suggest_int("tournament_size", 2, 8, step=2)
 
     toolbox = base.Toolbox()
     toolbox.register("attr_bool", random.randint, 0, 1)
@@ -42,7 +45,9 @@ def objective(trial):
 
     # Operators
     toolbox.register("evaluate", eval_fitness)
-    toolbox.decorate("evaluate", tools.DeltaPenality(feasible, not_feasible_penalty))
+    toolbox.decorate(
+        "evaluate", tools.DeltaPenality(feasible, not_feasible_penalty, distance)
+    )
     toolbox.register("mate", tools.cxUniform, indpb=indpb_mate)
     toolbox.register("mutate", tools.mutFlipBit, indpb=indpb_mutate)
     toolbox.register("select", tools.selTournament, tournsize=tournament_size)
@@ -68,16 +73,19 @@ def objective(trial):
     best_individual = hof.items[0]
     best_fitness = eval_fitness(best_individual)
 
-    # Evalúa la métrica que deseas optimizar (por ejemplo, precisión)
-    # En este ejemplo ficticio, simplemente devuelve una métrica de prueba
     return best_fitness
 
 
-# Configura y ejecuta el estudio de Optuna
-study = optuna.create_study(direction="minimize")
-study.optimize(objective, n_trials=100)
+# Set up and run the Optuna study
+study = optuna.create_study(
+    direction="minimize",
+    storage="sqlite:///db.sqlite3",  # Specify the storage URL here.
+    study_name="test-1",
+    load_if_exists=True,
+)
+study.optimize(objective, n_trials=600)
 
-# Imprime los mejores hiperparámetros encontrados por Optuna
+# Print the best hyperparameters found by Optuna
 print("Best trial:")
 best_trial = study.best_trial
 print(f"  Value: {best_trial.value}")
