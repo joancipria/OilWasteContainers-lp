@@ -5,8 +5,8 @@ from deap import base, creator, tools, algorithms
 from ga_functions import eval_fitness, feasible, distance, create_individual
 from loguru import logger
 
-study_name="preliminary-test"
-logger.add("./logs/{study_name}_{time}.log")
+study_name = "preliminary-test"
+logger.add("./logs/" + study_name + "_run_{time}.log")
 
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMin)
