@@ -15,7 +15,7 @@ service_level = 1 * 1000  # Service level, containers per inhabitants
 
 def create_individual():
     individual = [0] * individual_size
-    ones_indices = random.sample(range(3000), max_containers)
+    ones_indices = random.sample(range(individual_size), max_containers)
     for i in ones_indices:
         individual[i] = 1
     return creator.Individual(individual)
