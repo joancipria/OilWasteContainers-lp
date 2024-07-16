@@ -70,6 +70,9 @@ def remove_similar_locations(locations, threshold=10):
 def get_solution_coords(solution_vector, possible_locations):
     """
     Converts solution representation into a list of [long,lat] locations
+
+    :param list solution_vector: Solution / individual list
+    :param list possible_locations: Locations in [lon, lat] format
     """
     points = []
     for i, location in enumerate(possible_locations):
@@ -81,6 +84,9 @@ def get_solution_coords(solution_vector, possible_locations):
 def get_isochrone(location, minutes):
     """
     Returns isochrone polygon given a location and minutes
+
+    :param list location: Location in [lon, lat] format
+    :param int minutes: Isochrone range in minutes
     """
     try:
         # Calc isochrones
@@ -108,6 +114,9 @@ def get_isochrone(location, minutes):
 def generate_isochrones(possible_locations, isochrone_range):
     """
     For each possible location, create an isochrone and get pop
+    
+    :param list possible_locations: Locations in [lon, lat] format
+    :param int minutes: Isochrone range in minutes
     """
     points_and_pop = []
     for i, location in enumerate(possible_locations):
