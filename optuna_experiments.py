@@ -2,8 +2,9 @@ import optuna
 import random
 import numpy
 from deap import base, creator, tools, algorithms
-from ga_functions import eval_fitness, feasible, distance, create_individual
+from ga_functions import eval_fitness, feasible, distance, create_individual_random, create_individual_heuristic
 from loguru import logger
+from custom_deap import eaSimple
 
 study_name = "preliminary-test"
 logger.add("./logs/" + study_name + "_run_{time}.log")
@@ -38,7 +39,7 @@ def objective(trial):
     toolbox.register("attr_bool", random.randint, 0, 1)
     toolbox.register(
         "individual",
-        create_individual,
+        create_individual_random,
         # tools.initRepeat,
         # creator.Individual,
         # toolbox.attr_bool,
@@ -63,7 +64,7 @@ def objective(trial):
     stats.register("min", numpy.min)
     stats.register("max", numpy.max)
 
-    pop, log = algorithms.eaSimple(
+    pop, log = eaSimple(
         pop,
         toolbox,
         crossover_prob,
@@ -72,6 +73,8 @@ def objective(trial):
         stats=stats,
         halloffame=hof,
         verbose=True,
+        trial=trial,
+        optuna=optuna,
     )
     best_individual = hof.items[0]
     best_fitness = eval_fitness(best_individual)
@@ -95,6 +98,7 @@ study = optuna.create_study(
     storage="sqlite:///db.sqlite3",  # Specify the storage URL here.
     study_name=study_name,
     load_if_exists=True,
+    pruner=optuna.pruners.HyperbandPruner(),
 )
 study.optimize(objective, n_trials=600)
 
