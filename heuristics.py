@@ -1,6 +1,6 @@
 from shapely import to_geojson, Polygon
 from data import possible_locations, individual_size
-from utils import get_isochrone, get_population_from_polygon
+from utils import generate_isochrones
 from ga_functions import eval_fitness, max_containers
 import json
 
@@ -8,29 +8,14 @@ import json
 isochrone_range = 5  # minutes
 
 
-# For each possible location, create an isochrone and get pop
-def generate_isochrones():
-    points_and_pop = []
-    for i, location in enumerate(possible_locations):
-        isochrone = get_isochrone(location, isochrone_range)
-        population = get_population_from_polygon(to_geojson(isochrone))
-        points_and_pop.append(
-            {"index": i, "population": population, "isochrone": isochrone}
-        )
-
-    # Sort by ascending population
-    points_and_pop = sorted(
-        points_and_pop, key=lambda point: point["population"], reverse=True
-    )
-    return points_and_pop
-
-
-def max_population_heuristic():
+def max_population_heuristic(
+    possible_locations, individual_size, max_containers, isochrone_range
+):
     """
     Selects a subset of locations that maximizes population ensuring the number of containers does not exceed max_containers.
     """
     # Get population
-    points_and_pop = generate_isochrones()
+    points_and_pop = generate_isochrones(possible_locations, isochrone_range)
 
     # Get the first max_containers elements from the sorted list
     active_points = points_and_pop[:max_containers]
@@ -51,9 +36,7 @@ def max_population_heuristic():
         print("Fitness:", fitness, "Containers: ", num_containers)  # (374616,)
 
         # Convert and write to json file
-        with open(
-            "./results/max_population_heuristic.json", "w"
-        ) as outfile:
+        with open("./results/max_population_heuristic.json", "w") as outfile:
             json.dump(
                 {
                     "fitness": fitness,
@@ -66,13 +49,15 @@ def max_population_heuristic():
         print("The solution does not respect the max_containers constraint")
 
 
-def max_population_min_overlap_heuristic(threshold=0.56):
+def max_population_min_overlap_heuristic(
+    possible_locations, individual_size, max_containers, isochrone_range, threshold=0.56
+):
     """
     Selects a subset of locations that maximizes population while minimizing overlap and
     ensuring the number of containers does not exceed max_containers.
     """
     # Get population
-    points_and_pop = generate_isochrones()
+    points_and_pop = generate_isochrones(possible_locations, isochrone_range)
 
     selected_indices = []
     selected_polygons = []
@@ -128,5 +113,11 @@ def max_population_min_overlap_heuristic(threshold=0.56):
     else:
         print("The solution does not respect the max_containers constraint")
 
-max_population_heuristic()
-max_population_min_overlap_heuristic()
+
+# Run heuristics
+max_population_heuristic(
+    possible_locations, individual_size, max_containers, isochrone_range
+)
+max_population_min_overlap_heuristic(
+    possible_locations, individual_size, max_containers, isochrone_range, threshold=0.56
+)

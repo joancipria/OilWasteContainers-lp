@@ -2,6 +2,7 @@ import json
 import rasterio
 from rasterio.mask import mask
 from shapely.geometry import Point, LineString, Polygon
+from shapely import to_geojson
 from pyproj import Geod
 import requests
 
@@ -102,3 +103,22 @@ def get_isochrone(location, minutes):
         return Polygon(result["features"][0]["geometry"]["coordinates"][0])
     except ValueError as error:
         return {"error": error}
+
+
+def generate_isochrones(possible_locations, isochrone_range):
+    """
+    For each possible location, create an isochrone and get pop
+    """
+    points_and_pop = []
+    for i, location in enumerate(possible_locations):
+        isochrone = get_isochrone(location, isochrone_range)
+        population = get_population_from_polygon(to_geojson(isochrone))
+        points_and_pop.append(
+            {"index": i, "population": population, "isochrone": isochrone}
+        )
+
+    # Sort by ascending population
+    points_and_pop = sorted(
+        points_and_pop, key=lambda point: point["population"], reverse=True
+    )
+    return points_and_pop
