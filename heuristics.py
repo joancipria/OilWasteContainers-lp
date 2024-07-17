@@ -1,8 +1,11 @@
-from shapely import to_geojson, Polygon
-from data import possible_locations, individual_size
-from utils import generate_isochrones
+from data import possible_locations, individual_size, valencia_region_polygon
+from utils import (
+    generate_isochrones,
+    write_results,
+    get_solution_coords,
+    voronoi_division,
+)
 from ga_functions import eval_fitness, max_containers
-import json
 
 # Isochrone range
 isochrone_range = 5  # minutes
@@ -32,20 +35,16 @@ def max_population_heuristic(
     num_containers = solution.count(1)
 
     if num_containers == max_containers:
-        fitness = eval_fitness(solution)
-        print("Fitness:", fitness, "Containers: ", num_containers)  # (374616,)
-
-        # Convert and write to json file
-        with open("./results/max_population_heuristic.json", "w") as outfile:
-            json.dump(
-                {
-                    "fitness": fitness,
-                    "num_containers": num_containers,
-                    "solution": solution,
-                },
-                outfile,
-            )
-        return fitness, solution
+        fitness = eval_fitness(solution)[0]
+        solution_coords = get_solution_coords(solution, possible_locations)
+        voronoi_polygons = voronoi_division(solution_coords, valencia_region_polygon)
+        write_results(
+            "max_population_heuristic",
+            fitness,
+            solution,
+            solution_coords,
+            voronoi_polygons,
+        )
     else:
         print("The solution does not respect the max_containers constraint")
         return None
@@ -89,29 +88,17 @@ def max_population_min_overlap_heuristic(
     num_containers = solution.count(1)
 
     if solution.count(1) <= max_containers:
-        fitness = eval_fitness(solution)
-        print(
-            "Fitness:",
-            fitness,
-            "Containers: ",
-            num_containers,
-            "Overlap threshold: ",
-            threshold,
-        )  # (260021,)
+        fitness = eval_fitness(solution)[0]
 
-        # Convert and write to json file
-        with open(
-            "./results/max_population_min_overlap_heuristic.json", "w"
-        ) as outfile:
-            json.dump(
-                {
-                    "fitness": fitness,
-                    "num_containers": num_containers,
-                    "overlap_threshold": threshold,
-                    "solution": solution,
-                },
-                outfile,
-            )
+        solution_coords = get_solution_coords(solution, possible_locations)
+        voronoi_polygons = voronoi_division(solution_coords, valencia_region_polygon)
+        write_results(
+            "max_population_min_overlap_heuristic",
+            fitness,
+            solution,
+            solution_coords,
+            voronoi_polygons,
+        )
         return fitness, solution
     else:
         print("The solution does not respect the max_containers constraint")
