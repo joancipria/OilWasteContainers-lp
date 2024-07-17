@@ -7,6 +7,7 @@ from deap import tools
 from deap import algorithms
 
 from ga_functions import eval_fitness, feasible, max_containers, create_individual
+from utils import write_results, get_solution_coords, voronoi_division
 
 from loguru import logger
 
@@ -20,7 +21,9 @@ ngen = 300  # Number of generations
 pop_size = 500
 tournament_size = 4
 indpb_mate = 0.5  # Independent probability for each attribute to be exchanged
-indpb_mutate = 0.16999999999999998  # Independent probability for each attribute to be flipped.
+indpb_mutate = (
+    0.16999999999999998  # Independent probability for each attribute to be flipped.
+)
 
 # Types
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
@@ -90,4 +93,10 @@ if __name__ == "__main__":
     logger.debug(log)
     logger.debug(
         f"Best individual: {best_individual}, Fitness: {best_fitness}, Containers: {best_individual.count(1)}"
+    )
+
+    solution_coords = get_solution_coords(best_individual)
+    voronoi_polygons = voronoi_division(solution_coords)
+    write_results(
+        "ga_random", best_fitness, best_individual, solution_coords, voronoi_polygons
     )
