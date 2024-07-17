@@ -12,11 +12,14 @@ def load_input_data():
         with open("./data/possible_locations.json") as f:
             possible_locations = json.load(f)
 
-            return possible_locations, len(possible_locations)
+        with open("./data/current_locations.json") as f:
+            current_locations = json.load(f)
+
+            return possible_locations, len(possible_locations), current_locations
 
     except ValueError as error:
         print({"error": error})
 
 
 # Load input data
-possible_locations, individual_size = load_input_data()
+possible_locations, individual_size, current_locations = load_input_data()
