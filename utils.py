@@ -1,8 +1,8 @@
 import json
 import rasterio
 from rasterio.mask import mask
-from shapely.geometry import Point, LineString, Polygon
-from shapely import to_geojson
+from shapely.geometry import Point, LineString, Polygon, MultiPoint
+from shapely import to_geojson, voronoi_polygons, intersection
 from pyproj import Geod
 import requests
 
@@ -114,7 +114,7 @@ def get_isochrone(location, minutes):
 def generate_isochrones(possible_locations, isochrone_range):
     """
     For each possible location, create an isochrone and get pop
-    
+
     :param list possible_locations: Locations in [lon, lat] format
     :param int minutes: Isochrone range in minutes
     """
@@ -131,3 +131,31 @@ def generate_isochrones(possible_locations, isochrone_range):
         points_and_pop, key=lambda point: point["population"], reverse=True
     )
     return points_and_pop
+
+
+def voronoi_division(points, bound_polygon):
+    # Generate voronoi polygons
+    voronoi = voronoi_polygons(MultiPoint(points), extend_to=bound_polygon)
+
+    # Intersect generated polygons with Valencia region
+    voronoi_intersected = []
+    for polygon in voronoi.geoms:
+        if not polygon.is_empty:
+            intersect = intersection(polygon, bound_polygon)
+            voronoi_intersected.append(to_geojson(intersect))
+
+    return voronoi_intersected
+
+
+def write_results(name, fitness, solution, solution_coords, voronoi_polygons):
+    # Convert and write to json file
+    with open("./results/" + name + ".json", "w") as outfile:
+        json.dump(
+            {
+                "fitness": fitness,
+                "solution": solution,
+                "solution_coords": solution_coords,
+                "voronoi_polygons": voronoi_polygons,
+            },
+            outfile,
+        )
