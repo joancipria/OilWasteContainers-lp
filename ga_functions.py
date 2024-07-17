@@ -21,7 +21,7 @@ def create_individual():
     return creator.Individual(individual)
 
 
-def eval_fitness(solution):
+def eval_fitness(solution, possible_locations=possible_locations):
     # Get solution coords
     solution_coords = get_solution_coords(solution, possible_locations)
 
