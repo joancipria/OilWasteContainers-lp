@@ -1,12 +1,6 @@
 from deap import creator
-from shapely import (
-    to_geojson,
-    voronoi_polygons,
-    intersection,
-    MultiPoint,
-)
-from utils import get_population_from_polygon, get_solution_coords
-from data import valencia_region_polygon, individual_size, possible_locations
+from utils import get_population_from_polygon, get_solution_coords, voronoi_division
+from data import individual_size, possible_locations, valencia_region_polygon
 import random
 
 max_containers = 352
@@ -25,41 +19,23 @@ def eval_fitness(solution, possible_locations=possible_locations):
     # Get solution coords
     solution_coords = get_solution_coords(solution, possible_locations)
 
-    # Generate voronoi polygons
-    voronoi = voronoi_polygons(
-        MultiPoint(solution_coords), extend_to=valencia_region_polygon
-    )
-
-    # Intersect generated polygons with Valencia region
-    voronoi_intersected = []
-    for polygon in voronoi.geoms:
-        voronoi_intersected.append(intersection(polygon, valencia_region_polygon))
+    division = voronoi_division(solution_coords, valencia_region_polygon)
 
     # Append population to each voronoi polygon
-    voronoi = []
-    for polygon in voronoi_intersected:
-        if not polygon.is_empty:
+    scores = []
+    for polygon in division:
+        # Get pop in the poly
+        population = get_population_from_polygon(polygon)
 
-            dict_polygon = {"polygon": polygon}
+        # Get score
+        if population >= service_level:
+            score = population - service_level
+        else:
+            score = 0
 
-            # Convert shapely.Polygon to geojson
-            geometry = to_geojson(polygon)
+        scores.append(score)
 
-            # Get pop in the poly
-            population = get_population_from_polygon(geometry)
-
-            # Store it
-            dict_polygon["population"] = population
-
-            # Get score
-            if population >= service_level:
-                dict_polygon["score"] = population - service_level
-            else:
-                dict_polygon["score"] = 0
-
-            voronoi.append(dict_polygon)
-
-    return (sum(voronoi[i]["score"] for i in range(len(voronoi))),)
+    return (sum(scores[i] for i in range(len(scores))),)
 
 
 def feasible(individual):
