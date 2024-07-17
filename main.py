@@ -8,6 +8,7 @@ from deap import algorithms
 
 from ga_functions import eval_fitness, feasible, max_containers, create_individual
 from utils import write_results, get_solution_coords, voronoi_division
+from data import possible_locations, valencia_region_polygon
 
 from loguru import logger
 
@@ -17,7 +18,7 @@ logger.add("./logs/run_{time}.log")
 not_feasible_penalty = 900000
 cxpb = 0.8  # The probability of mating two individuals.
 mutpb = 0.18000000000000002  # The probability of mutating an individual.
-ngen = 300  # Number of generations
+ngen = 2  # Number of generations
 pop_size = 500
 tournament_size = 4
 indpb_mate = 0.5  # Independent probability for each attribute to be exchanged
@@ -95,8 +96,8 @@ if __name__ == "__main__":
         f"Best individual: {best_individual}, Fitness: {best_fitness}, Containers: {best_individual.count(1)}"
     )
 
-    solution_coords = get_solution_coords(best_individual)
-    voronoi_polygons = voronoi_division(solution_coords)
+    solution_coords = get_solution_coords(best_individual, possible_locations)
+    voronoi_polygons = voronoi_division(solution_coords, valencia_region_polygon)
     write_results(
         "ga_random", best_fitness, best_individual, solution_coords, voronoi_polygons
     )
