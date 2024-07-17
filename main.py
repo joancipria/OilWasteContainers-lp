@@ -15,12 +15,12 @@ logger.add("./logs/run_{time}.log")
 # --- Parameters ---
 not_feasible_penalty = 900000
 cxpb = 0.8  # The probability of mating two individuals.
-mutpb = 0.2  # The probability of mutating an individual.
+mutpb = 0.18000000000000002  # The probability of mutating an individual.
 ngen = 200  # Number of generations
-pop_size = 300
+pop_size = 500
 tournament_size = 4
 indpb_mate = 0.5  # Independent probability for each attribute to be exchanged
-indpb_mutate = 0.05  # Independent probability for each attribute to be flipped.
+indpb_mutate = 0.16999999999999998  # Independent probability for each attribute to be flipped.
 
 # Types
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
