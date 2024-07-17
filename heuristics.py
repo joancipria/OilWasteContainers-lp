@@ -45,7 +45,7 @@ def max_population_heuristic(
                 },
                 outfile,
             )
-        return solution
+        return fitness, solution
     else:
         print("The solution does not respect the max_containers constraint")
         return None
@@ -112,7 +112,7 @@ def max_population_min_overlap_heuristic(
                 },
                 outfile,
             )
-        return solution
+        return fitness, solution
     else:
         print("The solution does not respect the max_containers constraint")
         return None
@@ -130,6 +130,3 @@ def main():
         isochrone_range,
         threshold=0.56,
     )
-
-
-main()
