@@ -15,11 +15,20 @@ def load_input_data():
         with open("./data/current_locations.json") as f:
             current_locations = json.load(f)
 
-            return possible_locations, len(possible_locations), current_locations
+        with open("./results/max_population_min_overlap_heuristic.json") as f:
+            heuristic_individual = json.load(f)["solution"]
+            return (
+                possible_locations,
+                len(possible_locations),
+                current_locations,
+                heuristic_individual,
+            )
 
     except ValueError as error:
         print({"error": error})
 
 
 # Load input data
-possible_locations, individual_size, current_locations = load_input_data()
+possible_locations, individual_size, current_locations, heuristic_individual = (
+    load_input_data()
+)
