@@ -2,11 +2,11 @@ import optuna
 import random
 import numpy
 from deap import base, creator, tools, algorithms
-from ga_functions import eval_fitness, feasible, distance, create_individual_random, create_individual_heuristic
+from ga_functions import eval_fitness, feasible, distance, create_individual_random, create_heuristic_individual
 from loguru import logger
 from custom_deap import eaSimple
 
-study_name = "preliminary-test"
+study_name = "heuristic-optimization"
 logger.add("./logs/" + study_name + "_run_{time}.log")
 
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
@@ -39,7 +39,7 @@ def objective(trial):
     toolbox.register("attr_bool", random.randint, 0, 1)
     toolbox.register(
         "individual",
-        create_individual_random,
+        create_heuristic_individual,
         # tools.initRepeat,
         # creator.Individual,
         # toolbox.attr_bool,
