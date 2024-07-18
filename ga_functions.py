@@ -20,25 +20,21 @@ def create_individual_random():
     return creator.Individual(individual)
 
 
-def create_heuristic_individual(mutation_probability=0.4):
-    shuffled_chromosome = heuristic_individual[:]
-    # Mutate it
-    random.shuffle(shuffled_chromosome)
+def create_heuristic_individual(probability=0.01):
+    if not (0 <= probability <= 1):
+        raise ValueError("Probability must be between 0 and 1")
 
-    # # Obtener los índices de todos los elementos 1 en la lista
-    # ones_indices = [i for i, value in enumerate(chromosome) if value == 1]
-    
-    # # Seleccionar aleatoriamente los índices de los elementos 1 que se van a eliminar
-    # indices_to_remove = random.sample(ones_indices, num_ones_to_remove)
-    
-    # # Crear una copia del cromosoma original
-    # new_chromosome = chromosome[:]
-    
-    # # Eliminar los elementos en los índices seleccionados
-    # for index in sorted(indices_to_remove, reverse=True):
-    #     new_chromosome[index] = 0
+    swapped_list = []
+    for element in heuristic_individual:
+        if element not in (0, 1):
+            raise ValueError("List elements must be binary (0 or 1)")
 
-    return creator.Individual(shuffled_chromosome)
+        if random.random() < probability:
+            swapped_list.append(1 - element)  # Swap 1 to 0 or 0 to 1
+        else:
+            swapped_list.append(element)
+
+    return creator.Individual(swapped_list)
 
 
 def eval_fitness(solution, possible_locations=possible_locations):
