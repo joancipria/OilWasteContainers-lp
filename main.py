@@ -6,9 +6,14 @@ from deap import creator
 from deap import tools
 from deap import algorithms
 
-from ga_functions import eval_fitness, feasible, max_containers, create_individual
+from ga_functions import eval_fitness, feasible, max_containers, create_individual_random, create_heuristic_individual
 from utils import write_results, get_solution_coords, voronoi_division
 from data import possible_locations, valencia_region_polygon
+import pickle
+import sys
+
+run_id = sys.argv[1]
+
 
 from loguru import logger
 
@@ -36,7 +41,7 @@ toolbox = base.Toolbox()
 toolbox.register("attr_bool", random.randint, 0, 1)
 toolbox.register(
     "individual",
-    create_individual,
+    create_individual_random,
     # tools.initRepeat,
     # creator.Individual,
     # toolbox.attr_bool,
@@ -72,6 +77,9 @@ def main(pop_size, cxpb, mutpb, ngen):
         verbose=True,
     )
 
+    with open(f"./results/ga_random_{run_id}.pickle", "wb") as log_file:
+        pickle.dump(log, log_file)
+
     return pop, log, hof
 
 
@@ -90,7 +98,7 @@ if __name__ == "__main__":
 
     logger.debug("--- Final results ---")
     best_individual = hof.items[0]
-    best_fitness = eval_fitness(hof.items[0])
+    best_fitness = eval_fitness(hof.items[0])[0]
     logger.debug(log)
     logger.debug(
         f"Best individual: {best_individual}, Fitness: {best_fitness}, Containers: {best_individual.count(1)}"
@@ -99,5 +107,9 @@ if __name__ == "__main__":
     solution_coords = get_solution_coords(best_individual, possible_locations)
     voronoi_polygons = voronoi_division(solution_coords, valencia_region_polygon)
     write_results(
-        "ga_random", best_fitness, best_individual, solution_coords, voronoi_polygons
+        f"ga_random_{run_id}",
+        best_fitness,
+        best_individual,
+        solution_coords,
+        voronoi_polygons,
     )
