@@ -87,7 +87,7 @@ def max_population_min_overlap_heuristic(
     # Check constraint and evaluate solution
     num_containers = solution.count(1)
 
-    if solution.count(1) <= max_containers:
+    if num_containers <= max_containers:
         fitness = eval_fitness(solution)[0]
 
         solution_coords = get_solution_coords(solution, possible_locations)
