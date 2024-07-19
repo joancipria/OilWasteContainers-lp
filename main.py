@@ -15,10 +15,6 @@ import sys
 run_id = sys.argv[1]
 
 
-from loguru import logger
-
-logger.add("./logs/run_{time}.log")
-
 # --- Parameters ---
 not_feasible_penalty = 900000
 cxpb = 0.8  # The probability of mating two individuals.
@@ -84,25 +80,11 @@ def main(pop_size, cxpb, mutpb, ngen):
 
 
 if __name__ == "__main__":
-    logger.debug("--------------------")
-    logger.debug("---- GA started ----")
-    logger.debug("--------------------")
-    logger.debug("\n")
-    logger.debug(f"--- Params ---")
-    logger.debug(
-        f"max_containers: {max_containers}, not_feasible_penalty: {not_feasible_penalty}, cxpb: {cxpb}, mutpb: {mutpb}, ngen: {ngen}, pop_size: {pop_size}, tournament_size: {tournament_size}, indpb_mate: {indpb_mate}, indpb_mutate: {indpb_mutate}"
-    )
-    logger.debug(f"-------------------")
-
     pop, log, hof = main(pop_size, cxpb, mutpb, ngen)
 
-    logger.debug("--- Final results ---")
     best_individual = hof.items[0]
     best_fitness = eval_fitness(hof.items[0])[0]
-    logger.debug(log)
-    logger.debug(
-        f"Best individual: {best_individual}, Fitness: {best_fitness}, Containers: {best_individual.count(1)}"
-    )
+
 
     solution_coords = get_solution_coords(best_individual, possible_locations)
     voronoi_polygons = voronoi_division(solution_coords, valencia_region_polygon)

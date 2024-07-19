@@ -2,12 +2,16 @@ import optuna
 import random
 import numpy
 from deap import base, creator, tools, algorithms
-from ga_functions import eval_fitness, feasible, distance, create_individual_random, create_heuristic_individual
-from loguru import logger
+from ga_functions import (
+    eval_fitness,
+    feasible,
+    distance,
+    create_individual_random,
+    create_heuristic_individual,
+)
 from custom_deap import eaSimple
 
 study_name = "heuristic-optimization"
-logger.add("./logs/" + study_name + "_run_{time}.log")
 
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMin)
@@ -84,11 +88,6 @@ def objective(trial):
         if record["min"] == best_fitness[0]:
             best_gen = gen
             break
-
-    logger.debug(
-        f"Best individual: {best_individual}, Fitness: {best_fitness}, Containers: {best_individual.count(1)}, Generation: {best_gen}"
-    )
-
     return best_fitness
 
 
@@ -101,11 +100,3 @@ study = optuna.create_study(
     pruner=optuna.pruners.HyperbandPruner(),
 )
 study.optimize(objective, n_trials=600)
-
-# Print the best hyperparameters found by Optuna
-logger.debug("Best trial:")
-best_trial = study.best_trial
-logger.debug(f"  Value: {best_trial.value}")
-logger.debug("  Params: ")
-for key, value in best_trial.params.items():
-    logger.debug(f"    {key}: {value}")

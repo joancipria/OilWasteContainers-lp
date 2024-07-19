@@ -8,7 +8,6 @@ cligj==0.7.2
 deap==1.4.1
 geopandas==1.0.1
 idna==3.7
-loguru==0.7.2
 numpy==2.0.0
 packaging==24.1
 pandas==2.2.2
