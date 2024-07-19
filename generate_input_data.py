@@ -46,3 +46,23 @@ individual_size = len(possible_locations)
 
 print("Possible locations: ", individual_size)
 print("Input data saved in ./data/possible_locations.json")
+
+# Current locations
+# valencia_region_polygon = gpd.read_file("./data/valencia_region.geojson").dissolve()[
+#     "geometry"
+# ][0]
+
+# with open("./data/contenidors-oli-usat-contenedores-aceite-usado.json") as f:
+#     containers = json.load(f)
+
+
+# possible_locations = []
+# # For each container
+# for container in containers:
+#     # Get location
+#     location = [container["geo_point_2d"]["lon"], container["geo_point_2d"]["lat"]]
+
+#     # Check if locations is in valencia region
+#     if valencia_region_polygon.contains(Point(location)):
+#         # Then, append
+#         possible_locations.append(location)
