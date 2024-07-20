@@ -1,12 +1,14 @@
 from deap import creator
-from utils import get_population_from_polygon, get_solution_coords, voronoi_division
+from utils import get_solution_coords, voronoi_division
 from data import (
     individual_size,
     possible_locations,
     valencia_region_polygon,
     heuristic_individual,
+    raster_file,
 )
 import random
+import population_calculator
 
 max_containers = 352
 service_level = 1 * 1000  # Service level, containers per inhabitants
@@ -46,8 +48,12 @@ def eval_fitness(solution, possible_locations=possible_locations):
     # Append population to each voronoi polygon
     scores = []
     for polygon in division:
-        # Get pop in the poly
-        population = get_population_from_polygon(polygon)
+        try:
+            population = population_calculator.calculate_population(
+                polygon, raster_file
+            )
+        except RuntimeError as e:
+            population = 0.0
 
         # Get score
         if population >= service_level:

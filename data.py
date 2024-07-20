@@ -6,6 +6,8 @@ valencia_region_polygon = gpd.read_file("./data/valencia_region.geojson").dissol
     "geometry"
 ][0]
 
+# Raster file for pop calculations
+raster_file = "./data/valencia.tif"
 
 def load_input_data():
     try:
