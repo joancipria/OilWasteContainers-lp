@@ -11,6 +11,7 @@ from utils import write_results, get_solution_coords, voronoi_division
 from data import possible_locations, valencia_region_polygon
 import pickle
 import sys
+from custom_deap import eaSimple
 
 run_id = sys.argv[1]
 
@@ -62,7 +63,7 @@ def main(pop_size, cxpb, mutpb, ngen):
     stats.register("min", numpy.min)
     stats.register("max", numpy.max)
 
-    pop, log = algorithms.eaSimple(
+    pop, log = eaSimple(
         pop,
         toolbox,
         cxpb,
