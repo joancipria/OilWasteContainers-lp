@@ -8,30 +8,32 @@ import requests
 
 geod = Geod(ellps="WGS84")
 
-# Load population raster
-pop_raster = rasterio.open("./data/spain_pop.tif")
+# #Load population raster
+# pop_raster_path = "./data/spain_pop.tif"
+# pop_raster = rasterio.open(pop_raster_path)
 
 
-def get_population_from_polygon(polygon):
-    """
-    Returns number of people in a polygon
+# def get_population_from_polygon(polygon):
+#     """
+#     Returns number of people in a polygon
 
-    :param json polygon: Polygon in geoJSON format.
-    """
-    # Mask raster by the polygon and crop it
-    try:
-        polygon = json.loads(polygon)
-        out_image, out_transform = mask(pop_raster, [polygon], crop=True)
+#     :param json polygon: Polygon in geoJSON format.
+#     """
+#     try:
+#             polygon = json.loads(polygon)
+#             # Mask raster by the polygon and crop it
+#             #polygon = json.loads(polygon)
+#             out_image, out_transform = mask(pop_raster, [polygon], crop=True)
 
-        # Clean negative values
-        out_image = out_image[out_image >= 0]
+#             # Clean negative values
+#             out_image = out_image[out_image >= 0]
 
-        # Get total population
-        total_pop = int(out_image.sum())
+#             # Get total population
+#             total_pop = int(out_image.sum())
 
-        return total_pop
-    except ValueError as error:
-        return {"error": error}
+#             return total_pop
+#     except ValueError as error:
+#         return {"error": error}
 
 
 def get_distance_between_points(point_a, point_b):
