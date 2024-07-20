@@ -28,15 +28,15 @@ def objective(trial):
     mutation_prob = trial.suggest_float("mutation_prob", 0.01, 0.5, step=0.01)
 
     # Independent probability for each attribute to be flipped. 0.05 to 0.2,
-    indpb_mutate = trial.suggest_float("indpb_mutate", 0.05, 0.2, step=0.01)
+    indpb_mutate = trial.suggest_float("indpb_mutate", 0.05, 0.3, step=0.01)
 
     # The probability of mating two individuals.
-    crossover_prob = trial.suggest_float("crossover_prob", 0.1, 0.8, step=0.1)  #
+    crossover_prob = trial.suggest_float("crossover_prob", 0.1, 1, step=0.1)  #
 
     # Independent probability for each attribute to be exchanged 0.1 to 0.5
     indpb_mate = trial.suggest_float("indpb_mate", 0.1, 0.5, step=0.1)
 
-    population_size = trial.suggest_int("population_size", 100, 500, step=100)
+    population_size = trial.suggest_int("population_size", 100, 1000, step=100)
     tournament_size = trial.suggest_int("tournament_size", 2, 8, step=2)
 
     toolbox = base.Toolbox()
