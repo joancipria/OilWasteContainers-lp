@@ -1,6 +1,6 @@
 import random
+import time
 from deap import tools
-
 
 def varAnd(population, toolbox, cxpb, mutpb):
     r"""Part of an evolutionary algorithm applying only the variation part
@@ -53,7 +53,6 @@ def varAnd(population, toolbox, cxpb, mutpb):
             del offspring[i].fitness.values
 
     return offspring
-
 
 def eaSimple(
     population,
@@ -126,7 +125,7 @@ def eaSimple(
        Basic Algorithms and Operators", 2000.
     """
     logbook = tools.Logbook()
-    logbook.header = ["gen", "nevals"] + (stats.fields if stats else [])
+    logbook.header = ["gen", "nevals", "time"] + (stats.fields if stats else [])
 
     # Evaluate the individuals with an invalid fitness
     invalid_ind = [ind for ind in population if not ind.fitness.valid]
@@ -138,12 +137,14 @@ def eaSimple(
         halloffame.update(population)
 
     record = stats.compile(population) if stats else {}
-    logbook.record(gen=0, nevals=len(invalid_ind), **record)
+    logbook.record(gen=0, nevals=len(invalid_ind), time=0, **record)
     if verbose:
         print(logbook.stream)
 
     # Begin the generational process
     for gen in range(1, ngen + 1):
+        start_time = time.time()  # Start time of the generation
+        
         # Select the next generation individuals
         offspring = toolbox.select(population, len(population))
 
@@ -163,17 +164,22 @@ def eaSimple(
         # Replace the current population by the offspring
         population[:] = offspring
 
+        # Calculate the time taken for this generation
+        end_time = time.time()
+        generation_time = (end_time - start_time)
+
         # Append the current generation statistics to the logbook
         record = stats.compile(population) if stats else {}
-        logbook.record(gen=gen, nevals=len(invalid_ind), **record)
+        logbook.record(gen=gen, nevals=len(invalid_ind), time=generation_time, **record)
         if verbose:
             print(logbook.stream)
 
-        # Report intermediate objective value.
-        trial.report(halloffame[0].fitness.values[0], gen)
+        if trial and optuna:
+            # Report intermediate objective value.
+            trial.report(halloffame[0].fitness.values[0], gen)
 
-        # Handle pruning based on the intermediate value.
-        if trial.should_prune():
-            raise optuna.TrialPruned()
+            # Handle pruning based on the intermediate value.
+            if trial.should_prune():
+                raise optuna.TrialPruned()
 
     return population, logbook
