@@ -11,7 +11,7 @@ from ga_functions import (
 )
 from custom_deap import eaSimple
 
-study_name = "heuristic-optimization"
+study_name = "ga-random-init-optimization"
 
 creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 creator.create("Individual", list, fitness=creator.FitnessMin)
@@ -43,7 +43,7 @@ def objective(trial):
     toolbox.register("attr_bool", random.randint, 0, 1)
     toolbox.register(
         "individual",
-        create_heuristic_individual,
+        create_individual_random,
         # tools.initRepeat,
         # creator.Individual,
         # toolbox.attr_bool,
